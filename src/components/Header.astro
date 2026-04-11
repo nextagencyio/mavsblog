@@ -1,0 +1,82 @@
+---
+import { SITE_TITLE, FORUM_URL } from '../consts';
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<nav>
+		<div class="brand">
+			<a href="/">
+				<img src="/images/mavsboard-logo.png" alt="MavsBoard" class="logo" />
+				<span class="site-title">{SITE_TITLE}</span>
+			</a>
+		</div>
+		<div class="internal-links">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href={FORUM_URL}>Forum</HeaderLink>
+		</div>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0;
+		padding: 0 1em;
+		background: #0b1a2e;
+		border-bottom: 3px solid #0064b1;
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+	.brand a {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		text-decoration: none;
+		padding: 0.6em 0;
+	}
+	.logo {
+		height: 40px;
+		width: auto;
+	}
+	.site-title {
+		font-size: 1.3em;
+		font-weight: 700;
+		color: #fff;
+		letter-spacing: 0.5px;
+	}
+	nav a {
+		padding: 1em 0.5em;
+		color: #9fc5e8;
+		border-bottom: 3px solid transparent;
+		text-decoration: none;
+		font-size: 0.95em;
+		transition: color 0.2s;
+	}
+	nav a:hover {
+		color: #fff;
+	}
+	nav a.active {
+		color: #fff;
+		border-bottom-color: #0064b1;
+	}
+	.internal-links {
+		display: flex;
+		gap: 0.25em;
+	}
+	@media (max-width: 720px) {
+		.site-title {
+			display: none;
+		}
+		nav {
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 0.5em;
+		}
+	}
+</style>

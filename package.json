@@ -1,0 +1,26 @@
+{
+  "name": "mavsblog",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "generate:digest": "tsx scripts/generate-posts.ts --type digest",
+    "generate:thread": "tsx scripts/generate-posts.ts --type thread"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^5.0.3",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/vercel": "^10.0.4",
+    "astro": "^6.1.5",
+    "groq-sdk": "^1.1.2",
+    "sharp": "^0.34.3",
+    "tsx": "^4.21.0"
+  }
+}
