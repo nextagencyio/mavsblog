@@ -10,8 +10,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate:digest": "tsx scripts/generate-posts.ts --type digest",
-    "generate:thread": "tsx scripts/generate-posts.ts --type thread"
+    "scrape": "tsx scripts/generate-posts.ts scrape",
+    "generate": "tsx scripts/generate-posts.ts generate",
+    "scrape-and-generate": "tsx scripts/generate-posts.ts scrape-and-generate"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.3",

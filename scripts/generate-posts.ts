@@ -1,21 +1,16 @@
 /**
- * MavsBoard Blog Post Generator
+ * MavsBoard Blog Post Generator v2
  *
- * Scrapes top forum threads from MavsBoard.com and uses Groq AI
- * to generate blog posts from the community discussions.
+ * Phase 1: Scrape and save forum data locally (last 30 days)
+ * Phase 2: Use Groq AI to generate blog articles from the data
  *
  * Usage:
- *   npx tsx scripts/generate-posts.ts                    # Generate weekly digest
- *   npx tsx scripts/generate-posts.ts --type digest      # Weekly digest
- *   npx tsx scripts/generate-posts.ts --type thread 4022 # Single thread post
- *   npx tsx scripts/generate-posts.ts --type trending    # Trending topics
+ *   npx tsx scripts/generate-posts.ts scrape              # Scrape forum data
+ *   npx tsx scripts/generate-posts.ts generate             # Generate articles from scraped data
+ *   npx tsx scripts/generate-posts.ts scrape-and-generate  # Both in one run
  *
  * Environment:
- *   GROQ_API_KEY     — Groq API key (required)
- *   MYBB_DB_HOST     — MyBB database host (optional, for direct DB access)
- *   MYBB_DB_USER     — MyBB database user
- *   MYBB_DB_PASS     — MyBB database password
- *   MYBB_DB_NAME     — MyBB database name
+ *   GROQ_API_KEY  — Groq API key (required for generate step)
  */
 
 import fs from 'fs/promises'
@@ -25,348 +20,511 @@ import Groq from 'groq-sdk'
 // ── Config ──────────────────────────────────────────────────────────────
 
 const FORUM_URL = 'https://www.mavsboard.com'
-const FORUM_ID = 2 // "Dallas Mavericks and the NBA" forum
+const FORUM_ID = 2
+const DATA_DIR = path.join(process.cwd(), 'data')
 const CONTENT_DIR = path.join(process.cwd(), 'src', 'content', 'blog')
+const DAYS_BACK = 30
+const GROQ_MODEL = 'meta-llama/llama-4-scout-17b-16e-instruct' // cheap + fast
+const DELAY_MS = 1500 // delay between forum page fetches
+
+// Top posters — content from these users gets priority
+const TOP_POSTERS = [
+  'SleepingHero', 'KillerLeft', 'Kammrath', 'Chicagojk', 'omahen',
+  'cow', 'dirkfansince1998', 'ItsGoTime', 'HoosierDaddyKid', 'Mavs2021',
+  'ClutchDirk', 'Scott41theMavs', 'mvossman', 'fifteenth', 'DanSchwartzgan',
+  'Hypermav', 'F Gump', 'StepBackJay', 'Smitty', 'BigDirk41',
+]
 
 // ── Types ───────────────────────────────────────────────────────────────
 
-interface ForumThread {
-  tid: number
-  subject: string
-  username: string
-  replies: number
-  views: number
-  lastpost: number
-  dateline: number
-}
-
-interface ForumPost {
-  pid: number
+interface ScrapedPost {
   username: string
   message: string
-  dateline: number
+  dateString: string
+  isTopPoster: boolean
 }
 
-interface GeneratedPost {
+interface ScrapedThread {
+  tid: number
   title: string
-  slug: string
-  description: string
-  content: string
-  pubDate: string
-  forumThreadId: number
-  forumUrl: string
+  type: 'sticky' | 'normal'
+  url: string
+  posts: ScrapedPost[]
+  totalPosts: number
 }
 
-// ── Forum Scraper (HTML-based, no DB needed) ────────────────────────────
+interface ForumData {
+  scrapeDate: string
+  daysBack: number
+  threads: ScrapedThread[]
+  topPosters: string[]
+  stats: {
+    totalThreads: number
+    totalPosts: number
+    totalFromTopPosters: number
+  }
+}
 
-async function scrapeForumThreads(forumId: number, limit: number = 10): Promise<ForumThread[]> {
-  console.log(`  Fetching threads from forum ${forumId}...`)
-  const url = `${FORUM_URL}/forumdisplay.php?fid=${forumId}&sortby=lastpost&order=desc`
+// ── Helpers ─────────────────────────────────────────────────────────────
+
+function sleep(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+async function fetchHTML(url: string): Promise<string> {
   const response = await fetch(url, {
-    headers: { 'User-Agent': 'MavsBoard Blog Generator/1.0' }
+    headers: { 'User-Agent': 'MavsBoard Blog Generator/2.0' }
   })
-  const html = await response.text()
+  return response.text()
+}
 
-  // Parse thread list from HTML
-  const threads: ForumThread[] = []
-  const threadRegex = /showthread\.php\?tid=(\d+)[^"]*"[^>]*>([^<]+)/g
-  let match
-  const seen = new Set<number>()
+function stripHTML(html: string): string {
+  return html
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<blockquote[^>]*>[\s\S]*?<\/blockquote>/gi, '[QUOTE]')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'")
+    .replace(/\n{3,}/g, '\n\n')
+    .trim()
+}
 
-  while ((match = threadRegex.exec(html)) !== null) {
-    const tid = parseInt(match[1])
-    if (seen.has(tid)) continue
-    seen.add(tid)
+function isWithinDays(dateStr: string, days: number): boolean {
+  // MyBB date formats: "04-11-2026, 03:30 PM" or "Yesterday, 03:30 PM" or "Today, 03:30 PM"
+  const now = Date.now()
+  const cutoff = now - (days * 24 * 60 * 60 * 1000)
 
-    const subject = match[2].trim()
-    // Skip sticky/announcement-style threads
-    if (subject.toLowerCase().includes('sticky') || subject.toLowerCase().includes('rules')) continue
-
-    threads.push({
-      tid,
-      subject,
-      username: '',
-      replies: 0,
-      views: 0,
-      lastpost: Date.now() / 1000,
-      dateline: Date.now() / 1000,
-    })
-
-    if (threads.length >= limit) break
+  if (dateStr.includes('Today') || dateStr.includes('ago') || dateStr.includes('Yesterday')) {
+    return true
   }
 
-  console.log(`  Found ${threads.length} threads`)
-  return threads
+  // Try parsing the date
+  const match = dateStr.match(/(\d{2})-(\d{2})-(\d{4})/)
+  if (match) {
+    const parsed = new Date(`${match[3]}-${match[1]}-${match[2]}`)
+    return parsed.getTime() > cutoff
+  }
+
+  return true // if we can't parse, include it
 }
 
-async function scrapeThreadPosts(tid: number, maxPosts: number = 20): Promise<{ subject: string; posts: ForumPost[] }> {
-  console.log(`  Fetching posts from thread ${tid}...`)
-  const url = `${FORUM_URL}/showthread.php?tid=${tid}`
-  const response = await fetch(url, {
-    headers: { 'User-Agent': 'MavsBoard Blog Generator/1.0' }
-  })
-  const html = await response.text()
+// ── Phase 1: Scrape ─────────────────────────────────────────────────────
 
-  // Get thread title
-  const titleMatch = html.match(/<title>([^<]+)<\/title>/)
-  const subject = titleMatch ? titleMatch[1].trim() : `Thread ${tid}`
+async function scrapeForumPage(): Promise<{ stickyTids: number[]; normalTids: number[]; threadTitles: Map<number, string> }> {
+  console.log('  Fetching forum thread list...')
+  const html = await fetchHTML(`${FORUM_URL}/forumdisplay.php?fid=${FORUM_ID}`)
 
-  // Parse posts — look for post content divs
-  const posts: ForumPost[] = []
-  // MyBB wraps post content in <div id="pid_XXXX" class="post">
-  const postRegex = /id="post_(\d+)"[\s\S]*?<span class="largetext"><a[^>]*>([^<]+)<\/a><\/span>[\s\S]*?<div class="post_body"[^>]*>([\s\S]*?)<\/div>\s*<\/div>\s*<\/div>/g
+  const stickyTids: number[] = []
+  const normalTids: number[] = []
+  const threadTitles = new Map<number, string>()
 
-  let postMatch
-  while ((postMatch = postRegex.exec(html)) !== null && posts.length < maxPosts) {
-    const message = postMatch[3]
-      .replace(/<br\s*\/?>/g, '\n')
-      .replace(/<[^>]+>/g, '')
-      .replace(/&nbsp;/g, ' ')
-      .replace(/&amp;/g, '&')
-      .replace(/&lt;/g, '<')
-      .replace(/&gt;/g, '>')
-      .replace(/&quot;/g, '"')
-      .replace(/\n{3,}/g, '\n\n')
-      .trim()
+  // Find the line numbers for sticky/normal separators
+  const stickyStart = html.indexOf('Important Threads')
+  const normalStart = html.indexOf('Normal Threads')
 
-    if (message.length > 20) {
+  if (stickyStart === -1 || normalStart === -1) {
+    console.log('  Warning: Could not find sticky/normal separators')
+    return { stickyTids, normalTids, threadTitles }
+  }
+
+  const stickySection = html.substring(stickyStart, normalStart)
+  const normalSection = html.substring(normalStart)
+
+  // Extract thread IDs and titles from each section
+  const threadRegex = /showthread\.php\?tid=(\d+)">([^<0-9][^<]*)</g
+
+  let match
+  const seenSticky = new Set<number>()
+  while ((match = threadRegex.exec(stickySection)) !== null) {
+    const tid = parseInt(match[1])
+    if (!seenSticky.has(tid)) {
+      seenSticky.add(tid)
+      stickyTids.push(tid)
+      threadTitles.set(tid, match[2].replace(/&amp;/g, '&').trim())
+    }
+  }
+
+  const seenNormal = new Set<number>()
+  const normalRegex = /showthread\.php\?tid=(\d+)">([^<0-9][^<]*)/g
+  while ((match = normalRegex.exec(normalSection)) !== null) {
+    const tid = parseInt(match[1])
+    if (!seenNormal.has(tid) && !seenSticky.has(tid)) {
+      seenNormal.add(tid)
+      normalTids.push(tid)
+      threadTitles.set(tid, match[2].replace(/&amp;/g, '&').trim())
+    }
+  }
+
+  console.log(`  Found ${stickyTids.length} sticky threads, ${normalTids.length} normal threads`)
+  return { stickyTids, normalTids, threadTitles }
+}
+
+async function scrapeThreadPages(tid: number, title: string, maxPages: number = 10): Promise<ScrapedPost[]> {
+  const posts: ScrapedPost[] = []
+
+  // Start from the LAST page and work backwards (most recent posts first)
+  // First, get page 1 to find total pages
+  const firstPageHtml = await fetchHTML(`${FORUM_URL}/showthread.php?tid=${tid}`)
+
+  // Find total pages from pagination links for this specific thread
+  const pageRegex = new RegExp(`tid=${tid}&(?:amp;)?page=(\\d+)`, 'g')
+  let maxPage = 1
+  let pgMatch
+  while ((pgMatch = pageRegex.exec(firstPageHtml)) !== null) {
+    const pg = parseInt(pgMatch[1])
+    if (pg > maxPage) maxPage = pg
+  }
+  const totalPages = maxPage
+  const startPage = Math.max(1, totalPages - maxPages + 1)
+
+  process.stdout.write(`  Thread ${tid} "${title}" — ${totalPages} pages, scraping ${startPage}-${totalPages}`)
+
+  for (let page = totalPages; page >= startPage; page--) {
+    const url = page === 1
+      ? `${FORUM_URL}/showthread.php?tid=${tid}`
+      : `${FORUM_URL}/showthread.php?tid=${tid}&page=${page}`
+
+    const html = page === 1 && totalPages === 1 ? firstPageHtml : await fetchHTML(url)
+
+    // Parse posts from this page
+    // Split on post divs: <div class="post " ... id="post_XXXXX">
+    const postBlocks = html.split(/class="post\s+" style="" id="post_\d+"/)
+    for (const block of postBlocks.slice(1)) {
+      // Extract username — inside <span class="largetext"><a ...><span style="color:...">USERNAME</span></a>
+      const usernameMatch = block.match(/class="largetext"><a[^>]*>(?:<span[^>]*>)?([^<]+)/)
+      const username = usernameMatch ? usernameMatch[1].trim() : 'Unknown'
+
+      // Extract post body — <div class="post_body scaleimages" id="pid_XXXXX">...</div>
+      const bodyMatch = block.match(/class="post_body[^"]*"[^>]*>([\s\S]*?)<\/div>\s*\n?\s*\n?\s*<div class="post_meta"/)
+      if (!bodyMatch) continue
+      const message = stripHTML(bodyMatch[1])
+      if (message.length < 20) continue
+
+      // Extract date — <span class="post_date"><span title="MM-DD-YYYY">Today/Yesterday/date</span>, HH:MM
+      const dateMatch = block.match(/class="post_date"><span title="([^"]*)"/)
+      const dateString = dateMatch ? dateMatch[1].trim() : ''
+
+      // Check if within our date range
+      if (!isWithinDays(dateString, DAYS_BACK)) continue
+
       posts.push({
-        pid: parseInt(postMatch[1]),
-        username: postMatch[2].trim(),
-        message,
-        dateline: Date.now() / 1000,
+        username,
+        message: message.substring(0, 2000),
+        dateString,
+        isTopPoster: TOP_POSTERS.includes(username),
       })
     }
+
+    if (page > startPage) await sleep(DELAY_MS)
   }
 
-  // Fallback: simpler regex if the above didn't match
-  if (posts.length === 0) {
-    const simpleRegex = /class="post_body"[^>]*>([\s\S]*?)<\/div>/g
-    let simpleMatch
-    while ((simpleMatch = simpleRegex.exec(html)) !== null && posts.length < maxPosts) {
-      const message = simpleMatch[1]
-        .replace(/<br\s*\/?>/g, '\n')
-        .replace(/<[^>]+>/g, '')
-        .replace(/&nbsp;/g, ' ')
-        .replace(/&amp;/g, '&')
-        .replace(/\n{3,}/g, '\n\n')
-        .trim()
-
-      if (message.length > 20) {
-        posts.push({
-          pid: posts.length + 1,
-          username: 'Community Member',
-          message,
-          dateline: Date.now() / 1000,
-        })
-      }
-    }
-  }
-
-  console.log(`  Found ${posts.length} posts in "${subject}"`)
-  return { subject, posts }
+  process.stdout.write(` — ${posts.length} posts\n`)
+  return posts
 }
 
-// ── Groq AI Content Generation ──────────────────────────────────────────
+async function scrapeAllData(): Promise<ForumData> {
+  console.log('\n=== Phase 1: Scraping Forum Data ===\n')
 
-async function generateBlogPost(
-  groq: Groq,
-  threadData: { subject: string; posts: ForumPost[]; tid: number },
-  type: 'thread' | 'digest'
-): Promise<GeneratedPost> {
-  const postsText = threadData.posts
-    .slice(0, 15)
-    .map(p => `${p.username}: ${p.message.substring(0, 500)}`)
-    .join('\n\n---\n\n')
+  const { stickyTids, normalTids, threadTitles } = await scrapeForumPage()
+  await sleep(DELAY_MS)
 
-  const prompt = type === 'thread'
-    ? `You are a sports blogger for MavsBoard.com, a Dallas Mavericks fan community.
-Write a blog post based on this forum discussion thread titled "${threadData.subject}".
+  const threads: ScrapedThread[] = []
 
-Here are the forum posts from the community:
-
-${postsText}
-
-Write an engaging blog post that:
-1. Summarizes the key points and opinions from the discussion
-2. Highlights the most interesting takes and debates
-3. Adds context for casual fans who might not follow every game
-4. Is written in a conversational, fan-community tone
-5. Is 400-800 words
-6. Includes specific quotes or paraphrases from community members (use their usernames)
-7. Ends with a call to action to join the discussion on the forum
-
-Return ONLY the blog post content in markdown format. Do not include a title heading — that will be added separately.`
-    : `You are a sports blogger for MavsBoard.com, a Dallas Mavericks fan community.
-Write a "Weekly Digest" blog post summarizing these top forum discussions:
-
-${postsText}
-
-Write an engaging weekly roundup that:
-1. Covers the top 3-5 discussion topics from the week
-2. Highlights the hottest takes and most debated topics
-3. Is written in a conversational, fan-community tone
-4. Is 500-1000 words
-5. References specific community members by username
-6. Ends by inviting readers to join the discussions on MavsBoard
-
-Return ONLY the blog post content in markdown format. Do not include a title heading.`
-
-  const completion = await groq.chat.completions.create({
-    messages: [{ role: 'user', content: prompt }],
-    model: 'llama-3.3-70b-versatile',
-    temperature: 0.7,
-    max_tokens: 2000,
-  })
-
-  const content = completion.choices[0]?.message?.content || ''
-
-  // Generate metadata
-  const today = new Date()
-  const dateStr = today.toISOString().split('T')[0]
-  const slug = threadData.subject
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '')
-    .substring(0, 60)
-
-  const descPrompt = `Write a 1-sentence meta description (under 155 characters) for a blog post titled "${threadData.subject}" about Dallas Mavericks fan discussion. Return ONLY the description, no quotes.`
-
-  const descCompletion = await groq.chat.completions.create({
-    messages: [{ role: 'user', content: descPrompt }],
-    model: 'llama-3.3-70b-versatile',
-    temperature: 0.5,
-    max_tokens: 100,
-  })
-
-  const description = descCompletion.choices[0]?.message?.content?.trim() ||
-    `MavsBoard community discusses: ${threadData.subject}`
-
-  return {
-    title: threadData.subject,
-    slug: `${dateStr}-${slug}`,
-    description,
-    content,
-    pubDate: today.toISOString(),
-    forumThreadId: threadData.tid,
-    forumUrl: `${FORUM_URL}/showthread.php?tid=${threadData.tid}`,
+  // Scrape sticky threads (all of them, last 30 days of posts)
+  console.log(`\n--- Sticky Threads (${stickyTids.length}) ---\n`)
+  for (const tid of stickyTids) {
+    const title = threadTitles.get(tid) || `Thread ${tid}`
+    const posts = await scrapeThreadPages(tid, title, 15) // up to 15 pages back
+    threads.push({
+      tid,
+      title,
+      type: 'sticky',
+      url: `${FORUM_URL}/showthread.php?tid=${tid}`,
+      posts,
+      totalPosts: posts.length,
+    })
+    await sleep(DELAY_MS)
   }
+
+  // Scrape normal threads (top 10 most recent)
+  console.log(`\n--- Normal Threads (top ${Math.min(normalTids.length, 10)}) ---\n`)
+  for (const tid of normalTids.slice(0, 10)) {
+    const title = threadTitles.get(tid) || `Thread ${tid}`
+    const posts = await scrapeThreadPages(tid, title, 5) // up to 5 pages back
+    threads.push({
+      tid,
+      title,
+      type: 'normal',
+      url: `${FORUM_URL}/showthread.php?tid=${tid}`,
+      posts,
+      totalPosts: posts.length,
+    })
+    await sleep(DELAY_MS)
+  }
+
+  const totalPosts = threads.reduce((sum, t) => sum + t.posts.length, 0)
+  const totalFromTopPosters = threads.reduce(
+    (sum, t) => sum + t.posts.filter(p => p.isTopPoster).length, 0
+  )
+
+  const data: ForumData = {
+    scrapeDate: new Date().toISOString(),
+    daysBack: DAYS_BACK,
+    threads,
+    topPosters: TOP_POSTERS,
+    stats: {
+      totalThreads: threads.length,
+      totalPosts,
+      totalFromTopPosters,
+    },
+  }
+
+  // Save to disk
+  await fs.mkdir(DATA_DIR, { recursive: true })
+  const filename = `forum-data-${new Date().toISOString().split('T')[0]}.json`
+  const filepath = path.join(DATA_DIR, filename)
+  await fs.writeFile(filepath, JSON.stringify(data, null, 2))
+
+  // Also save a "latest" symlink-style copy
+  await fs.writeFile(path.join(DATA_DIR, 'latest.json'), JSON.stringify(data, null, 2))
+
+  console.log(`\n=== Scrape Complete ===`)
+  console.log(`  Threads: ${data.stats.totalThreads}`)
+  console.log(`  Posts: ${data.stats.totalPosts}`)
+  console.log(`  From top posters: ${data.stats.totalFromTopPosters}`)
+  console.log(`  Saved: ${filepath}`)
+
+  return data
 }
 
-// ── File Output ─────────────────────────────────────────────────────────
+// ── Phase 2: Generate Articles ──────────────────────────────────────────
 
-async function savePost(post: GeneratedPost): Promise<string> {
-  const frontmatter = `---
-title: "${post.title.replace(/"/g, '\\"')}"
-description: "${post.description.replace(/"/g, '\\"')}"
-pubDate: "${post.pubDate}"
-forumUrl: "${post.forumUrl}"
+async function generateArticles(data: ForumData): Promise<void> {
+  console.log('\n=== Phase 2: Generating Articles ===\n')
+
+  const apiKey = process.env.GROQ_API_KEY
+  if (!apiKey) {
+    console.error('GROQ_API_KEY required. Set it in .env')
+    process.exit(1)
+  }
+
+  const groq = new Groq({ apiKey })
+  await fs.mkdir(CONTENT_DIR, { recursive: true })
+
+  // Strategy 1: Generate a post for each sticky thread with enough content
+  const stickyThreads = data.threads.filter(t => t.type === 'sticky' && t.posts.length >= 5)
+  console.log(`  ${stickyThreads.length} sticky threads with enough content`)
+
+  for (const thread of stickyThreads) {
+    console.log(`\n  Generating article for: "${thread.title}"`)
+
+    // Prioritize top poster content but include others
+    const topPosterPosts = thread.posts.filter(p => p.isTopPoster)
+    const otherPosts = thread.posts.filter(p => !p.isTopPoster)
+
+    // Build a balanced selection: 60% top posters, 40% others
+    const selectedPosts = [
+      ...topPosterPosts.slice(0, 12),
+      ...otherPosts.slice(0, 8),
+    ]
+
+    const postsText = selectedPosts
+      .map(p => `**${p.username}** (${p.dateString}):\n${p.message}`)
+      .join('\n\n---\n\n')
+
+    const prompt = `You are a sports blogger writing for MavsBoard Blog (blog.mavsboard.com), the official blog of a Dallas Mavericks fan community forum.
+
+Below are recent posts (last 30 days) from the MavsBoard forum thread titled "${thread.title}". The forum has been around for years and has passionate, knowledgeable Mavs fans.
+
+FORUM POSTS:
+${postsText}
+
+Write a compelling blog article based on these discussions. Requirements:
+1. Create an engaging headline (not the same as the thread title)
+2. Write 500-900 words
+3. Summarize the key topics, debates, and opinions from the community
+4. Quote or reference specific users by name — they are the stars of the content
+5. Add context that a casual NBA fan would need
+6. Write in a conversational, community-driven tone — not ESPN formal
+7. End with an invitation to join the discussion at mavsboard.com
+8. Focus on the most interesting/insightful takes, not just the most recent
+
+Format your response as:
+HEADLINE: [your headline]
+DESCRIPTION: [1 sentence under 155 chars for SEO meta description]
+---
+[article body in markdown]`
+
+    try {
+      const completion = await groq.chat.completions.create({
+        messages: [{ role: 'user', content: prompt }],
+        model: GROQ_MODEL,
+        temperature: 0.7,
+        max_tokens: 2500,
+      })
+
+      const response = completion.choices[0]?.message?.content || ''
+
+      // Parse headline and description
+      const headlineMatch = response.match(/HEADLINE:\s*(.+)/)
+      const descMatch = response.match(/DESCRIPTION:\s*(.+)/)
+      const bodyMatch = response.split('---').slice(1).join('---').trim()
+
+      const headline = headlineMatch?.[1]?.trim() || thread.title
+      const description = descMatch?.[1]?.trim() || `MavsBoard community discusses: ${thread.title}`
+      const body = bodyMatch || response
+
+      // Generate slug and save
+      const today = new Date().toISOString().split('T')[0]
+      const slug = headline
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '')
+        .substring(0, 60)
+
+      const frontmatter = `---
+title: "${headline.replace(/"/g, '\\"')}"
+description: "${description.replace(/"/g, '\\"')}"
+pubDate: "${new Date().toISOString()}"
+forumUrl: "${thread.url}"
+tags: ["${thread.type === 'sticky' ? 'featured' : 'discussion'}"]
 ---`
 
-  const fileContent = `${frontmatter}
+      const fileContent = `${frontmatter}
 
-${post.content}
+${body}
 
 ---
 
-*This post is based on community discussions from [MavsBoard Forum](${post.forumUrl}). Join the conversation!*
+*This article is curated from community discussions on [MavsBoard Forum](${thread.url}). Join the conversation and share your take!*
 `
+      const filePath = path.join(CONTENT_DIR, `${today}-${slug}.md`)
+      await fs.writeFile(filePath, fileContent)
+      console.log(`  ✅ Saved: ${path.basename(filePath)}`)
 
-  const filePath = path.join(CONTENT_DIR, `${post.slug}.md`)
-  await fs.mkdir(CONTENT_DIR, { recursive: true })
-  await fs.writeFile(filePath, fileContent)
-  return filePath
+    } catch (err: any) {
+      console.error(`  ❌ Error generating for "${thread.title}": ${err.message}`)
+    }
+
+    await sleep(2000) // rate limit between API calls
+  }
+
+  // Strategy 2: Generate a weekly digest from normal threads
+  const normalThreads = data.threads.filter(t => t.type === 'normal' && t.posts.length >= 3)
+  if (normalThreads.length >= 2) {
+    console.log(`\n  Generating weekly digest from ${normalThreads.length} normal threads...`)
+
+    const digestText = normalThreads
+      .map(t => {
+        const bestPosts = [
+          ...t.posts.filter(p => p.isTopPoster).slice(0, 3),
+          ...t.posts.filter(p => !p.isTopPoster).slice(0, 2),
+        ]
+        const postsStr = bestPosts
+          .map(p => `  ${p.username}: ${p.message.substring(0, 300)}`)
+          .join('\n')
+        return `THREAD: "${t.title}" (${t.posts.length} posts)\n${postsStr}`
+      })
+      .join('\n\n===\n\n')
+
+    const prompt = `You are a sports blogger writing the weekly digest for MavsBoard Blog (blog.mavsboard.com).
+
+Here are the active discussion threads from MavsBoard this week:
+
+${digestText}
+
+Write a "MavsBoard Weekly Roundup" blog post. Requirements:
+1. Cover each active thread as a section
+2. Write 600-1000 words total
+3. Highlight the best takes from community members (use their usernames)
+4. Keep it conversational and fun
+5. End with a call to join MavsBoard
+
+Format your response as:
+HEADLINE: [your headline, e.g. "MavsBoard Weekly: Tank Watch, Draft Dreams, and Cooper Flagg's Latest"]
+DESCRIPTION: [1 sentence under 155 chars]
+---
+[article body in markdown]`
+
+    try {
+      const completion = await groq.chat.completions.create({
+        messages: [{ role: 'user', content: prompt }],
+        model: GROQ_MODEL,
+        temperature: 0.7,
+        max_tokens: 2500,
+      })
+
+      const response = completion.choices[0]?.message?.content || ''
+      const headlineMatch = response.match(/HEADLINE:\s*(.+)/)
+      const descMatch = response.match(/DESCRIPTION:\s*(.+)/)
+      const body = response.split('---').slice(1).join('---').trim()
+
+      const headline = headlineMatch?.[1]?.trim() || 'MavsBoard Weekly Roundup'
+      const description = descMatch?.[1]?.trim() || 'This week on MavsBoard: the hottest Mavs discussions'
+
+      const today = new Date().toISOString().split('T')[0]
+      const slug = `weekly-roundup-${today}`
+
+      const fileContent = `---
+title: "${headline.replace(/"/g, '\\"')}"
+description: "${description.replace(/"/g, '\\"')}"
+pubDate: "${new Date().toISOString()}"
+forumUrl: "${FORUM_URL}"
+tags: ["weekly-digest"]
+---
+
+${body}
+
+---
+
+*This weekly roundup is curated from the hottest discussions on [MavsBoard Forum](${FORUM_URL}). Join the community!*
+`
+      const filePath = path.join(CONTENT_DIR, `${slug}.md`)
+      await fs.writeFile(filePath, fileContent)
+      console.log(`  ✅ Digest saved: ${path.basename(filePath)}`)
+    } catch (err: any) {
+      console.error(`  ❌ Error generating digest: ${err.message}`)
+    }
+  }
+
+  console.log('\n=== Generation Complete ===')
 }
 
 // ── Main ────────────────────────────────────────────────────────────────
 
 async function main() {
-  const args = process.argv.slice(2)
-  let type = 'digest'
-  let threadId: number | null = null
-
-  for (let i = 0; i < args.length; i++) {
-    if (args[i] === '--type' && args[i + 1]) {
-      type = args[i + 1]
-      i++
-    } else if (!args[i].startsWith('--') && !isNaN(parseInt(args[i]))) {
-      threadId = parseInt(args[i])
-    }
-  }
-
-  // Check for API key
-  const apiKey = process.env.GROQ_API_KEY
-  if (!apiKey) {
-    console.error('GROQ_API_KEY environment variable is required')
-    console.error('Get your key at https://console.groq.com/')
-    process.exit(1)
-  }
-
-  const groq = new Groq({ apiKey })
+  const command = process.argv[2] || 'scrape-and-generate'
 
   console.log('╔══════════════════════════════════════════════════════════╗')
-  console.log('║     MavsBoard Blog Post Generator                      ║')
+  console.log('║     MavsBoard Blog Post Generator v2                   ║')
   console.log('╚══════════════════════════════════════════════════════════╝')
-  console.log()
 
-  if (type === 'thread' && threadId) {
-    // Generate post from a specific thread
-    console.log(`Generating post from thread ${threadId}...`)
-    const { subject, posts } = await scrapeThreadPosts(threadId)
-    if (posts.length === 0) {
-      console.error('No posts found in thread')
+  if (command === 'scrape') {
+    await scrapeAllData()
+  } else if (command === 'generate') {
+    // Load latest scraped data
+    const dataPath = path.join(DATA_DIR, 'latest.json')
+    try {
+      const raw = await fs.readFile(dataPath, 'utf-8')
+      const data: ForumData = JSON.parse(raw)
+      console.log(`  Loaded data from ${data.scrapeDate} (${data.stats.totalPosts} posts)`)
+      await generateArticles(data)
+    } catch {
+      console.error(`No scraped data found at ${dataPath}. Run 'scrape' first.`)
       process.exit(1)
     }
-
-    console.log('\nGenerating blog post with Groq AI...')
-    const post = await generateBlogPost(groq, { subject, posts, tid: threadId }, 'thread')
-    const filePath = await savePost(post)
-    console.log(`\n✅ Post saved: ${filePath}`)
-    console.log(`   Title: ${post.title}`)
-    console.log(`   Slug: ${post.slug}`)
-
-  } else if (type === 'digest') {
-    // Generate weekly digest from top threads
-    console.log('Generating weekly digest...')
-    const threads = await scrapeForumThreads(FORUM_ID, 5)
-
-    if (threads.length === 0) {
-      console.error('No threads found')
-      process.exit(1)
-    }
-
-    // Fetch posts from each thread
-    const allPosts: ForumPost[] = []
-    for (const thread of threads) {
-      const { posts } = await scrapeThreadPosts(thread.tid, 5)
-      allPosts.push(...posts.map(p => ({ ...p, message: `[${thread.subject}] ${p.message}` })))
-      // Rate limit
-      await new Promise(r => setTimeout(r, 1000))
-    }
-
-    const today = new Date()
-    const weekStr = today.toISOString().split('T')[0]
-
-    console.log('\nGenerating digest with Groq AI...')
-    const post = await generateBlogPost(
-      groq,
-      {
-        subject: `MavsBoard Weekly Digest - ${weekStr}`,
-        posts: allPosts,
-        tid: 0,
-      },
-      'digest'
-    )
-    post.forumUrl = FORUM_URL
-
-    const filePath = await savePost(post)
-    console.log(`\n✅ Digest saved: ${filePath}`)
-    console.log(`   Title: ${post.title}`)
-
+  } else if (command === 'scrape-and-generate') {
+    const data = await scrapeAllData()
+    await generateArticles(data)
   } else {
     console.log('Usage:')
-    console.log('  npx tsx scripts/generate-posts.ts --type digest')
-    console.log('  npx tsx scripts/generate-posts.ts --type thread 4022')
+    console.log('  npx tsx scripts/generate-posts.ts scrape')
+    console.log('  npx tsx scripts/generate-posts.ts generate')
+    console.log('  npx tsx scripts/generate-posts.ts scrape-and-generate')
   }
 }
 
