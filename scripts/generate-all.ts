@@ -309,35 +309,39 @@ async function generateArticle(groq: Groq, plan: ArticlePlan): Promise<void> {
     .map(([name, url]) => `${name}: ${url}`)
     .join('\n')
 
-  const prompt = `You are a sports blogger writing for MavsBoard Blog (blog.mavsboard.com), the official blog of a Dallas Mavericks fan community forum. The forum has passionate, knowledgeable fans who have been discussing Mavs basketball for years.
+  const prompt = `You write for MavsBoard Blog. You're a Mavs fan yourself — you have opinions, you're funny, and you write like you're texting your basketball-obsessed friend group, not writing a term paper.
 
 CONTEXT: ${plan.prompt}
 
 FORUM POSTS FROM THE COMMUNITY:
 ${postsText}
 
-USER PROFILE LINKS (use these when mentioning usernames):
+USER PROFILE LINKS — link usernames as markdown links like [cow](url):
 ${userMapStr}
 
-Write a compelling blog article. Requirements:
-1. Create an engaging, SEO-friendly headline
-2. Write 500-900 words
-3. When you mention a community member, link their name to their MavsBoard profile using markdown links like [username](profile_url). They are the stars of the content.
-4. Add context a casual NBA fan would need
-5. Conversational, community-driven tone — not ESPN formal
-6. Do NOT include a "join the forum" ending — that will be added separately
-7. Focus on the most insightful takes, not just recapping
+WRITING RULES:
+- Write 500-900 words
+- Sound like a real fan, not a robot. Have a VOICE. Take sides sometimes. Be funny.
+- Use short punchy paragraphs. Mix up sentence length. Some one-liners. Some longer thoughts.
+- Use blockquotes (> ) for the best fan quotes — pull the juiciest, funniest, or most insightful lines directly from the posts. Don't paraphrase everything.
+- Link usernames to their profiles when you mention them
+- Add basketball context where needed but don't over-explain — your readers watch games
+- NEVER use these phrases: "let's dive in", "one thing is certain", "it's clear that", "passionate and engaged", "sounds crazy right", "without further ado", "in conclusion", "at the end of the day", "as the discussion continued", "buckle up", "whether or not"
+- Don't start every paragraph with "[Username] said..." — vary your structure
+- Don't summarize every single post — pick the 4-6 best takes and build around them
+- Have fun with it. If something a fan said is hilarious, say so. If a take is bad, roast it gently.
+- End on something memorable — a hot take, a prediction, a funny line. NOT a generic "what do you think?"
 
 Format your response EXACTLY as:
-HEADLINE: [your headline]
-DESCRIPTION: [1 sentence, under 155 chars, for SEO]
+HEADLINE: [something catchy and specific, not generic]
+DESCRIPTION: [1 punchy sentence under 155 chars for SEO]
 ---
-[article body in markdown, NO h1 heading — the title is added separately]`
+[article body in markdown, NO h1 heading]`
 
   const completion = await groq.chat.completions.create({
     messages: [{ role: 'user', content: prompt }],
     model: GROQ_MODEL,
-    temperature: 0.7,
+    temperature: 0.85,
     max_tokens: 2500,
   })
 
@@ -346,7 +350,10 @@ DESCRIPTION: [1 sentence, under 155 chars, for SEO]
   const headlineMatch = response.match(/HEADLINE:\s*(.+)/)
   const descMatch = response.match(/DESCRIPTION:\s*(.+)/)
   const parts = response.split(/^---$/m)
-  const body = parts.length > 1 ? parts.slice(1).join('---').trim() : response
+  let body = parts.length > 1 ? parts.slice(1).join('---').trim() : response
+
+  // Clean up any leaked HEADLINE/DESCRIPTION lines from the body
+  body = body.replace(/^HEADLINE:.*\n?/gm, '').replace(/^DESCRIPTION:.*\n?/gm, '').trim()
 
   const headline = headlineMatch?.[1]?.trim().replace(/^["']|["']$/g, '') || plan.id
   const description = descMatch?.[1]?.trim().replace(/^["']|["']$/g, '') || `MavsBoard community discusses Mavericks basketball`

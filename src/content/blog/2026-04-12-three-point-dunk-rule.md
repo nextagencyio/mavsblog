@@ -1,32 +1,43 @@
 ---
-title: "MavsBoard Debates the Wild \"3-Point Dunk\" Rule: A Slam Dunk for Sanity?"
-description: "MavsBoard community members weigh in on a hypothetical NBA rule change that could revolutionize the game."
-pubDate: "2026-04-12T00:04:05.454Z"
+title: "Mavs Fans Go Wild: The 3-Point Dunk Debate"
+description: "MavsBoard users propose a radical rule change: what if dunks from beyond the 3-point line were worth 4 or 5 points?"
+pubDate: "2026-04-12T01:00:16.312Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4244"
 tags: ["fun", "opinion"]
 heroImage: "../../assets/thumbnails/2026-04-12-three-point-dunk-rule.jpg"
 ---
 
+The MavsBoard community is *losing it* over a hypothetical "3-Point Dunk" rule. Fans are throwing out wild ideas to spice up the NBA, and we're loving every minute of it. [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) kicks off the discussion with a practical (sort of) suggestion: reducing the hoop diameter by an inch. "Reducing the diameter of the hoop by an inch (give or take) might accomplish what you are looking for without altering rules or the dimensions of the court layout.."
 
-The NBA is known for its thrilling dunks, three-pointers, and buzzer-beaters, but what if we told you there's a proposed rule change that could shake things up? Enter the "3-Point Dunk" rule, a hypothetical game-changer that's got MavsBoard community members going wild. In a recent thread, fans shared their thoughts on what would happen if the league introduced a new scoring system that rewards dunks with three points. Sounds crazy, right? Let's dive in and see what our community had to say.
+But let's be real, that's not nearly as fun as some of the other proposals. [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) laments the evolution of the game, saying it's become too focused on 3-pointers and not enough on varied scoring: 
+> Basketball, I believe, is most fun when there are multiple ways to score and with different types of play
 
-For those who may not be familiar, the NBA has seen a significant shift in recent years, with teams relying more heavily on three-point shooting. This has led to some exciting games, but also some criticism that the game has become too focused on outside shooting. [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) kicked off the discussion by expressing his concerns about the game's evolution. He believes that the current emphasis on three-point shooting has made the game less enjoyable, especially when teams aren't making their shots.
+We couldn't agree more, Rasheed. The game needs a shake-up. That's where [DallasMaverick](https://www.mavsboard.com/member.php?action=profile&uid=352) comes in with a drastic solution: 
+> Disallow any way of scoring except dunks and free throws.
 
-"I get the evolution as, strategy-wise, it makes the most sense," RasheedsBigWhiteSpot said. "But from a basketball purity sense, especially if shots aren't falling, it gets boring. Likewise, from a lineup perspective, too many teams are changing to where all five players are similar (essentially all 3&D players), which is, again, boring." He argues that basketball is most fun when there are multiple ways to score and with different types of play.
+Talk about a reversion to the old school! We're not sure if that would make the game more exciting or just plain weird. 
 
-One possible solution proposed by [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) is to reduce the diameter of the hoop by an inch or two. This could make shooting more challenging and encourage players to drive to the rim. "Ball changes typically cause an uproar," cow said. "I'm not saying my idea is likely, but if we are throwing out crazy ideas, that would drop 3PT percentages and maybe force players in closer to the rim."
+The 3-Point Dunk idea itself is simple: if you dunk from beyond the 3-point line, it's worth 4 or 5 points. [meistermatze](https://www.mavsboard.com/member.php?action=profile&uid=173) likes the idea but is worried about all-time stats: "I like it. The only thing I don‘t like is that all-time-stats will make no sense anymore."
 
-But what about a more drastic solution? [DallasMaverick](https://www.mavsboard.com/member.php?action=profile&uid=352) suggested disallowing any way of scoring except dunks and free throws. "That's an interesting idea," he said. "It would definitely make the game more physical and exciting." Of course, this would require a significant overhaul of the game's rules and strategies.
+That's a valid concern, but we think it's a small price to pay for a more thrilling game. And who knows, maybe it'll lead to some crazy new strategies. [loki](https://www.mavsboard.com/member.php?action=profile&uid=390) chimes in with a wacky suggestion to take it to the next level: 
+> You could inflate the ball a little more for good measure.
 
-Others had more... creative solutions. [myconsumerclub](https://www.mavsboard.com/member.php?action=profile&uid=1016) proposed bouncing the ball off the scoreboard to hit a shot, which would instantly win the game for that team. [loki](https://www.mavsboard.com/member.php?action=profile&uid=390) joked about inflating the ball a little more to make it harder to shoot. And [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) even suggested that Michael Finley-style cartwheel dunks should be worth four points.
+We're not sure what that would do, but it sounds like a recipe for disaster (or a circus show). 
 
-Not everyone was convinced that a rule change is necessary, however. [speedkilz88](https://www.mavsboard.com/member.php?action=profile&uid=101) suggested ending all three-point shots and making everything worth two points. "Problem solved," he said.
+The discussion takes a turn for the absurd when [myconsumerclub](https://www.mavsboard.com/member.php?action=profile&uid=1016) proposes that bouncing the ball off the scoreboard to hit a shot should instantly win the game for your team. 
+> bouncing the ball off of the scoreboard to hit a shot should be like the game is over and your team wins instantly.
 
-[meistermatze](https://www.mavsboard.com/member.php?action=profile&uid=173) brought up a valid point, noting that changing the rules would make it difficult to compare players across different eras. "I like it," he said. "The only thing I don't like is that all-time-stats will make no sense anymore."
+That's... um... a unique idea. And then there's [speedkilz88](https://www.mavsboard.com/member.php?action=profile&uid=101) with a straightforward solution: just get rid of 3-pointers altogether. 
+> End all 3 pt shots.  Everything is once again only 2 pts.  Problem solved.
 
-As the discussion continued, it became clear that there's no easy solution to this problem. However, it's clear that MavsBoard community members are passionate about the game and eager to share their ideas. Whether or not the NBA actually implements a "3-Point Dunk" rule remains to be seen, but one thing is certain: our community is always ready to debate and discuss the latest developments in the world of basketball.
+We're not sure if that's a solution or a cry for help. 
 
-So, what do you think? Should the NBA introduce a new scoring system that rewards dunks with three points? Share your thoughts in the comments!
+The best part of the discussion? [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) reviving the classic Michael Finley cartwheel dunk: 
+> While we're at I think Michael Finley cartwheel dunks should court for 4 points
+
+If that's not a worthy proposal, we don't know what is. 
+
+In the end, it's clear that Mavs fans are hungry for change. Whether it's a 3-Point Dunk rule or something entirely new, we can't wait to see what the NBA comes up with next. Until then, keep the ideas coming, MavsBoard! And to [cow](https://www.mavsboard.com/member.php?action=profile&uid=92), we say: don't hold your breath for that hoop size change.
 
 ---
 

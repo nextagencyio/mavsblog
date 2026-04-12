@@ -20,7 +20,7 @@ dotenv.config()
 
 const CONTENT_DIR = path.join(process.cwd(), 'src', 'content', 'blog')
 const ASSETS_DIR = path.join(process.cwd(), 'src', 'assets', 'thumbnails')
-const FIREWORKS_API_URL = 'https://api.fireworks.ai/inference/v1/workflows/accounts/fireworks/models/flux-1-schnell-fp8/text_to_image'
+const FIREWORKS_API_URL = 'https://api.fireworks.ai/inference/v1/workflows/accounts/fireworks/models/flux-1-dev-fp8/text_to_image'
 
 // Player descriptions for prompt building (no real names in prompts)
 const PLAYER_DESCRIPTIONS: Record<string, string> = {
@@ -67,7 +67,8 @@ async function generateImage(prompt: string, filename: string): Promise<string> 
     body: JSON.stringify({
       prompt,
       aspect_ratio: '16:9',
-      num_inference_steps: 4,
+      num_inference_steps: 28,
+      guidance_scale: 3.5,
       seed: 0,
     }),
   })
@@ -107,17 +108,18 @@ async function buildPromptForPost(title: string, tags: string[], groq: Groq): Pr
   const completion = await groq.chat.completions.create({
     messages: [{
       role: 'user',
-      content: `Generate a short image prompt (under 100 words) for an AI image generator to create a thumbnail for a Dallas Mavericks basketball blog article titled "${title}".
+      content: `Generate a short image prompt (under 80 words) for an AI image generator to create a fun cartoon thumbnail for a Dallas Mavericks basketball blog article titled "${title}".
 
-${playerDescs.length > 0 ? `Player visual descriptions to incorporate: ${playerDescs.join('; ')}` : ''}
-${scene ? `Scene suggestion: ${scene}` : ''}
+${scene ? `Scene concept: ${scene}` : ''}
 
-Requirements:
-- Sports editorial illustration style, dramatic lighting
-- Dallas Mavericks color palette: navy blue #00285E, royal blue #0053BC, white
-- Dynamic, eye-catching composition suitable for a blog thumbnail
-- Do NOT use any real person names — describe physical appearance only
-- No text or words in the image
+STRICT RULES:
+- Bold cartoon illustration style with thick black outlines, bright vibrant saturated colors
+- Dallas Mavericks color palette: navy blue, royal blue, white, orange basketball
+- NO real people, NO faces, NO human figures — use silhouettes if people are needed
+- Use fun metaphorical objects, props, and symbols to represent the topic
+- NO text, NO words, NO letters, NO numbers on anything
+- Clean composition, fun playful whimsical mood
+- Think editorial cartoon / infographic art, not photorealistic
 
 Return ONLY the image prompt, nothing else.`
     }],

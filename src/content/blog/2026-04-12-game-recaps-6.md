@@ -1,34 +1,39 @@
 ---
-title: "Mavs' Rebuild Takes Shape: Fan Reactions to the Sacramento Kings Game"
-description: "A recap of the Dallas Mavericks' game against the Sacramento Kings, focusing on player development, fan reactions, and insights from the MavsBoard community."
-pubDate: "2026-04-12T00:03:59.903Z"
+title: "Mavs Fall to Kings, Fans Left Wondering About Max and the Future"
+description: "Dallas Mavericks struggle against Sacramento Kings, fans react to another loss"
+pubDate: "2026-04-12T01:00:10.730Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4207"
 tags: ["game-recap"]
 heroImage: "../../assets/thumbnails/2026-04-12-game-recaps-6.jpg"
 ---
 
+The Dallas Mavericks' rebuild year is in full swing, and fans are eagerly watching for signs of growth from the young players. Unfortunately, the Mavs'  game 58 against the Sacramento Kings didn't provide much to get excited about. The Kings took down the Mavs, and fans were left frustrated.
 
-The Dallas Mavericks' rebuild year has been a rollercoaster ride, but fans are excited about the young talent on display. In the game against the Sacramento Kings, several players stood out, and the MavsBoard community had plenty to say about their performances.
+Defense was a major issue, with [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) calling it a "rough watch" and stating that his recording stopped working in the last 8 minutes. The Mavs' offense didn't fare much better, with [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) expressing disappointment in Max's performance, saying he was "poor" on both ends of the court.
 
-The game was a close one, with the Mavs ultimately coming out on top. However, fans were not impressed with the team's defense, with [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) calling it "pretty poor." The Mavs' offense was also a mixed bag, with some players struggling to find their rhythm.
+One bright spot was AJ Johnson, who showed promise off the bench. [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) was excited to see AJ in action, noting that he "can be an instant O guy off the bench." However, Dan also had some concerns about AJ's defensive abilities, calling him a "total matador." 
 
-One player who did catch fans' attention was AJ Johnson, who scored 11 points off the bench. [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) was impressed with Johnson's offense, noting that he could be an "instant O guy" off the bench. However, Dan also expressed concerns about Johnson's defense, calling him a "total matador."
+The development of Cooper Flagg, a highly touted prospect, was also on fans' minds. Although he was out for this game, fans are eager to see him back on the court and make an impact. 
 
-[Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) had a nuanced take on Johnson's play, suggesting that he's being asked to play a different role than he will on a good team. Chicagojk also praised Johnson's hard work and build, but noted that he's still average on defense.
+The Mavs' struggles have fans wondering about the team's future, particularly when it comes to players like Max and Tyus Jones. [FireNicoHarrison](https://www.mavsboard.com/member.php?action=profile&uid=4633) doesn't think Max can be a starter on a championship team, while [ThisIStheYear](https://www.mavsboard.com/member.php?action=profile&uid=103) thinks he should be traded back to the Lakers.
 
-Another player who drew discussion was Maxi Kleber. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) was critical of Kleber's offense and defense, while [FireNicoHarrison](https://www.mavsboard.com/member.php?action=profile&uid=4633) questioned whether Kleber can be a starter on a championship team. [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) offered a more optimistic view, suggesting that Kleber is a complimentary player who plays better with better talent on the court.
+On the other hand, some fans are more optimistic about the team's young players. [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) thinks Max is a complimentary player who benefits from playing with better talent, and that his recent struggles can be attributed to the team's injuries.
 
-The conversation also turned to the topic of player development and the challenges of evaluating young players. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) noted that players who skip steps, such as going straight from the G-League to the NBA, often struggle to succeed. He contrasted this with players like Nemby, who had four years of competitive college basketball.
+As the Mavs continue their rebuild, fans will be keeping a close eye on the team's progress. One thing's for sure: it's going to be a wild ride.
 
-[Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97) had a tongue-in-cheek comment about the team's transition and the importance of hiring a good GM. Meanwhile, [loki](https://www.mavsboard.com/member.php?action=profile&uid=390) joked that coach Jason Kidd was trying to win down the stretch, despite the team's depleted roster.
+> "The transition length has everything to do with how good the new GM is - and that he is hired by June." - [Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97)
 
-The game also saw some interesting lineup decisions, with Kidd playing AJ Johnson and other young players. [DallasMaverick](https://www.mavsboard.com/member.php?action=profile&uid=352) noted that Kidd wouldn't have been playing Johnson if he wasn't trying to develop the young players.
+The Mavs' next game will be crucial in determining the team's trajectory. Will they be able to turn things around, or will they continue to struggle? Only time will tell.
 
-Overall, the MavsBoard community had a lively discussion about the game, with fans offering insights and opinions on the team's young players. While the team's record may not be ideal, fans are excited about the progress they're seeing from players like AJ Johnson and the potential for growth in the future.
+In the meantime, fans will be eagerly watching for signs of growth from the young players, and debating the merits of players like Max and AJ Johnson. One thing's for sure: the Mavs' rebuild year is going to be a wild ride.
 
-As one fan [Unknown](https://www.mavsboard.com/member.php?action=profile&uid=0) noted, it's tough to stay engaged when the team is losing, but the development of young players like Johnson and others makes it worth watching. [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) joked about "Plan Plowden" being a success, referencing the team's efforts to tank and rebuild.
+As we move forward, it's clear that the Mavs have some talented young players, but they still have a lot to learn. With a new GM and a fresh perspective, maybe next season will be the year the Mavs turn things around.
 
-The Mavs' rebuild is ongoing, but fans are optimistic about the future. With players like AJ Johnson, Maxi Kleber, and others showing promise, the team is taking steps in the right direction. As [SkenfromLMF](https://www.mavsboard.com/member.php?action=profile&uid=279) noted, the team may not have won the game convincingly, but they got the job done. And with the right development and roster moves, fans are hopeful that the Mavs can become a competitive team in the near future.
+Until then, fans will be left wondering: what's next for the Mavs? 
+
+> "Plan Plowden was finally a success." - [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171)
+
+The Mavs' season may not be what fans were hoping for, but there's still plenty to look forward to. And who knows, maybe next year will be the year the Mavs make a push for the playoffs.
 
 ---
 

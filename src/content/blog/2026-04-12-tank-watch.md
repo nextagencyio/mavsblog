@@ -1,30 +1,44 @@
 ---
-title: "MavsBoard Tank Watch: Fans Weigh In on Lottery Odds and Prospects"
-description: "Dallas Mavericks fans discuss tanking strategy and NBA draft prospects as team positions for 2026 lottery."
-pubDate: "2026-04-12T00:03:42.410Z"
+title: "Tank Watch: Mavs Fans Master the Art of Losing"
+description: "The Mavs are 24-52 and fans are crunching lottery odds, debating prospects, and cheering for losses."
+pubDate: "2026-04-12T00:59:53.928Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4279"
 tags: ["draft", "tank-watch"]
 heroImage: "../../assets/thumbnails/2026-04-12-tank-watch.jpg"
 ---
 
+TANK WATCH: Mavs Fans Weigh In on Lottery Odds and Tanking Strategies
+The Dallas Mavericks are positioning for the 2026 NBA Draft lottery, and fans are eagerly debating the pros and cons of tanking.
 
-The NBA season is winding down, and for fans of the Dallas Mavericks, the focus has shifted from competing for a playoff spot to positioning for the 2026 NBA draft lottery. With a 24-52 record, the Mavs are well on their way to securing a high draft pick, and the community is buzzing with excitement and debate.
+The Mavs' 24-52 record has them sitting in a prime spot to grab a high draft pick, but it's not a guarantee. The team is tied with the Memphis Grizzlies, and the outcome of their respective games will determine their lottery odds. 
+The odds are as follows according to [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72):
+ 
+| Outcome            | 6th Worst | Tie (6/7) | 7th Worst | Tie (7/8) |
+|-------------------|-----------|-----------|-----------|-----------|
+| Top 4 Pick          |  37.2%    |  34.6%   |  31.9%     |  29.8%   |
+| #6 Pick              |    9.4%   |    8.3%   |    7.1%     |    6.2%   |
+| #7 Pick              |    9.7%   |    8.5%   |    7.2%     |    6.3%   |
+| #8 Pick              |  20.6%   |  27.4%    |  34.1%.    |  29.6%   |
+| #9 Pick              |  29.2%   |  23.2%    |  17.2%     |  21.4%   |
 
-At the forefront of the discussion is the team's strategy for maximizing their lottery odds. [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) has been crunching the numbers, providing detailed breakdowns of the possible outcomes. According to his analysis, the Mavs have a 37.2% chance of landing a top-four pick, with a 9.4% chance of getting the #6 pick and a 9.7% chance of getting the #7 pick.
+Some fans, like [Dirknows](https://www.mavsboard.com/member.php?action=profile&uid=732), are hoping for a top-4 pick and believe the lottery is rigged: "If the lottery is rigged, which there’s just no way it’s not with all the number 1 picks that have transpired over the years with seemingly insurmountable odds, it’s not good for the 4th largest market in the US to not field a competitive team."
 
-But not everyone is on board with the tanking strategy. Some fans, like [Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97), are eager to see competitive basketball, even if it means a lower draft pick. "I absolutely agree that if the lottery is fixed in any way, the Mavs will move up," he wrote. "But if they win the Chicago game and don't move up, I'm not going to care much about the draft when it's about seven deep and tied for seventh doesn't provide much opportunity for seven."
+Others, like [Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97), are more concerned about the team's competitiveness: "If they win the Chicago game and don't move up, I'm not going to care much about the draft when it's about seven deep and tied for seventh doesn't provide much opportunity for seven."
 
-The Mavs' final game of the season against the Chicago Bulls is looming, and fans are speculating about the team's approach. [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23) suggests that coach Jason Kidd should sit the starters and play younger players, while [myconsumerclub](https://www.mavsboard.com/member.php?action=profile&uid=1016) is keeping an eye on the injury report.
+[Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504) provides some context on the teams competing with the Mavs for a high draft pick: "Since the ASG: Utah 3-20, Memphis 5-25. Last 20 games: Utah 3-17, Memphis 2-18." He believes Utah had the #5 pick as their end goal.
 
-Meanwhile, the tanking efforts of other teams are also being closely watched. The Memphis Grizzlies and Utah Jazz are engaged in a "tanking Super Bowl," with both teams resting players and vying for the worst record. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) notes that the Grizzlies have 90% of their salaries out on the court, making them "tank masters."
+[Mav2021](https://www.mavsboard.com/member.php?action=profile&uid=504) later added: 
+> Kings might just do more Kings things and pull Utah back in anyway.
 
-As for the prospects, fans are already eyeing potential targets. [Dirknows](https://www.mavsboard.com/member.php?action=profile&uid=732) is optimistic about the team's chances of landing a top-four pick, which would secure a talented rookie like Cooper, who has been impressive this season.
+[RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) isn't having it: "Suck it, Ainge!!! Now let's lose on Sunday and start practicing our coin flips!" 
 
-Other fans, like [OldMavsFan](https://www.mavsboard.com/member.php?action=profile&uid=7454), are taking a more cautious approach. "I really don't understand why the Pelicans are resting players when they don't have a draft pick anyway," he wrote. "So Mavs win they are 7th or tied for 7th, I do wonder why they don't use the season long standings, which the Mavs will finish lower than either or both of the other teams, due to tie breakers on ties."
+The Mavs' final game is against the Chicago Bulls, and fans are divided on whether the team should try to win or tank. [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23) suggests sitting the starters and playing the bench: "Apparently Coop is now on the injury report. If I was Kidd, I'd sit the starters (send them on to DAL even), play #10-15 off the bench, add in the 2-ways and sign on a couple of 10 days to play against SAN."
 
-The debate is heating up, with fans weighing in on the pros and cons of tanking and the potential prospects. As the season comes to a close, one thing is certain: the MavsBoard community is passionate and engaged, and their voices will be heard loud and clear as the team navigates the offseason.
+[OldMavsFan](https://www.mavsboard.com/member.php?action=profile&uid=7454) thinks the Mavs will likely end up with the 8th or 9th pick: "The highest odds are the Mavs pick 8th or 9th, if they don't get lucky again and finish in the top 4." 
 
-In the end, it's not just about the draft pick; it's about building a competitive team that can make a deep playoff run. As [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) quipped, "Let's lose on Sunday and start practicing our coin flips!" The MavsBoard community will be eagerly awaiting the outcome, ready to react and analyze every twist and turn.
+The debate rages on, but one thing's for sure: Mavs fans are eager to see their team tanking for a top draft pick. 
+
+The Mavs have a tough decision to make on Sunday. Will they tank and risk losing, or will they try to win and potentially move up in the draft? Only time will tell.
 
 ---
 

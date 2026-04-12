@@ -1,30 +1,39 @@
 ---
 title: "MavsBoard Debate: To Trade or Not to Trade Kyrie Irving?"
-description: "Dallas Mavericks fans weigh in on the future of Kyrie Irving after his ACL injury, and whether the team should trade him or keep him as a veteran leader."
-pubDate: "2026-04-12T00:03:14.521Z"
+description: "Mavs fans weigh in on Kyrie's future after ACL injury"
+pubDate: "2026-04-12T00:59:25.878Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=3856"
 tags: ["trade-rumors", "featured"]
 heroImage: "../../assets/thumbnails/2026-04-12-kyrie-future-debate.jpg"
 ---
 
+The MavsBoard community is buzzing with debates about Kyrie Irving's future with the Dallas Mavericks. After tearing his ACL, the fanbase is divided on whether to trade him for draft picks or keep him as a veteran leader for Cooper Flagg's development. 
 
-The Dallas Mavericks' offseason has been marked by a heated debate among fans: what to do with Kyrie Irving? The star point guard's future with the team is uncertain after suffering a torn ACL, and the MavsBoard community is divided on the issue. Some fans, like [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482), believe it's time to trade Irving for draft picks, while others, like [RoyTarpleysGhost](https://www.mavsboard.com/member.php?action=profile&uid=881), think he should be kept as a veteran leader for the team's young core.
+Some fans, like [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482), think it's time to cut ties: 
+> "I don't think adding Kyrie to the mix is going to move the needle much on his value and would rather get whatever we can for him this summer before he becomes a negative asset."
 
-For context, Irving was having a strong season with the Mavericks before his injury, averaging 25.6 points and 5.2 assists per game. His ACL tear has raised concerns about his long-term value to the team, and fans are now weighing in on whether it's worth holding onto him.
+On the other hand, fans like [RoyTarpleysGhost](https://www.mavsboard.com/member.php?action=profile&uid=881) believe Kyrie can still be a valuable asset:
+> "Let him get healthy, play next to Kyrie and Flagg, and rehab some trade value next year. We already saw he doesn't have much trade value right now."
 
-One of the main arguments against keeping Irving is that he may become a "negative asset" if he's not able to return to form quickly. [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) suggests that the team should get whatever it can for Irving this summer, rather than risking him becoming a liability. This perspective is shared by others, who point out that the Mavericks don't have many valuable assets to trade, making Irving's draft picks a potentially valuable commodity.
+The Mavs' lack of assets is a major concern. As [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) pointed out, "The Mavs don't have an asset worth a lottery pick (other than Flagg)." This makes the upcoming draft crucial for the team's future. 
 
-On the other hand, some fans believe that Irving's experience and leadership could be invaluable to the team's young players, particularly [Cooper Flagg](https://www.mavsboard.com/threads/cooper-flagg.12345/), the team's highly touted rookie. [RoyTarpleysGhost](https://www.mavsboard.com/member.php?action=profile&uid=881) argues that Irving could be a positive influence on Flagg and other young players, and that his trade value may not be worth giving up on. This perspective is supported by [Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504), who suggests that the team could surround Irving with talented young players and use him as a mentor.
+[Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504) shared a potential offseason plan:
+> "Irving/X/X
+Christie/Thompson/Johnson
+Marshall/Martin/X
+Flagg/Washington/Bagley
+Lively/Gafford/Cisse
+MLE + two 1st round picks."
 
-Another consideration is the team's salary cap situation. With Irving's $44 million contract, the Mavericks are already facing a significant financial burden. [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) suggests that the team could use Irving's contract to facilitate a trade for a player like [Isaac](https://www.mavsboard.com/threads/isaac.12345/), who could help fill a need at center.
+This plan assumes the Mavs will draft a guard and potentially trade for a veteran player to support Kyrie and Flagg. [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) even floated a wild idea:
+> "Could I talk myself into a Morant reclamation project? He's hurt. Could that elbow injury be parlayed into a season-ending injury? Could Kyrie be a positive influence to help rebuild his value and then trade him next TDL or the following offseason?"
 
-Some fans are also considering the possibility of trading Irving for draft picks, which could be used to acquire a player like [Morant](https://www.mavsboard.com/threads/morant.12345/), who has struggled with injuries and off-court issues. [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) suggests that Irving could be a positive influence on Morant, helping him to rebuild his value and potentially trade him in the future.
+While Morant's situation is complicated, it's clear that the Mavs have tough decisions ahead. As [vfromlmf](https://www.mavsboard.com/member.php?action=profile&uid=99) noted, building through the draft is key:
+> "It's going to be hard to build this thing like we want it to look through free agency or trades alone. The core of OKC, SA and HOU were all built through the draft..."
 
-Ultimately, the decision on what to do with Irving will depend on the Mavericks' front office and their vision for the team's future. However, the debate on MavsBoard highlights the complexity of the issue and the many factors that will need to be considered.
+The Mavs' front office has a tough task ahead, but one thing's for sure: the team's future will be shaped by their decisions on Kyrie Irving. Will they trade him for draft picks or keep him as a veteran leader? Only time will tell.
 
-As [vfromlmf](https://www.mavsboard.com/member.php?action=profile&uid=99) notes, building a team through the draft is often the most effective way to create a sustainable winning culture. With players like Flagg, [Lively](https://www.mavsboard.com/threads/lively.12345/), and [Washington](https://www.mavsboard.com/threads/washington.12345/), the Mavericks have a strong foundation to build on. But with Irving's talent and experience, the team may have a unique opportunity to accelerate its rebuild.
-
-The MavsBoard community will undoubtedly continue to debate the issue, but one thing is clear: the Mavericks' decision on Kyrie Irving will have a significant impact on the team's future. Will they choose to trade him for draft picks, or keep him as a veteran leader? Only time will tell.
+As for me? I'm Team Trade Kyrie. Don't get me wrong, I love the guy's skills, but with an ACL tear and a crowded backcourt, it's time to cash in on his value. The Mavs need assets, and Kyrie's injury makes him a ticking time bomb. Let's get those draft picks and build for the future. Morant, anyone?
 
 ---
 

@@ -1,42 +1,27 @@
 ---
-title: "Mavs News Roundup: Flagg's Historic Rookie Season, Trade Rumors, and the Future of the Franchise"
-description: "Catch up on the latest Dallas Mavericks news, fan reactions, and insights from around the NBA, covering Cooper Flagg's impressive rookie season and the team's plans for the future."
-pubDate: "2026-04-12T00:03:08.596Z"
+title: "Flagg Drops 51, Mavs Hunt for a GM, and the Rebuild Gets Real"
+description: "Dallas Mavericks rebuild heats up with Cooper Flagg's record-breaking season, potential trades, and a new GM search."
+pubDate: "2026-04-12T00:59:20.868Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=2172"
 tags: ["news", "featured"]
 heroImage: "../../assets/thumbnails/2026-04-12-mavs-news-this-week.jpg"
 ---
 
+Mavs News Roundup: Flagg's Historic Season, Trade Rumors, and a GM Search
 
-The Dallas Mavericks' rebuild year has been a wild ride, but one thing is clear: Cooper Flagg is the real deal. The rookie sensation has been turning heads with his impressive play, and fans are excited to see what the future holds for him and the team. In this week's Mavs news roundup, we'll dive into the latest developments, fan reactions, and insights from around the NBA.
+The Dallas Mavericks' rebuild is in full swing, and fans are excited about the team's young core and potential moves in the offseason. **Cooper Flagg** is having a historic rookie season, and his growth is a big reason why Mavs fans are optimistic about the future.
 
-**Flagg's Historic Rookie Season**
+Flagg's impressive play has drawn comparisons to other top rookies, including Victor Wembanyama, who recently played against the Mavs. As [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) noted, "Wemby is so good... He had a spin move on Cisse and dunked it that was incredible." Flagg's ability to create his own shots and make plays off the dribble has been a revelation, and fans are eager to see how he'll develop alongside other young players.
 
-Cooper Flagg's rookie season has been nothing short of phenomenal. As [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) pointed out, Flagg is on track to finish the year with a 40% three-point shooting percentage, a remarkable achievement for a rookie. He's also impressing with his free-throw shooting, ranking fourth in the league with a 90% success rate.
+One of the most interesting storylines surrounding Flagg is his potential to break Wilt Chamberlain's rookie record. As [Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504) joked, "Only one reason to play Flagg in the last game. Trying to break Wilt's record. Cause Flagg plays that's an automatic win against the Bulls." While it's uncertain if Flagg will reach this milestone, his impressive play has fans excited for the future.
 
-But Flagg's impact goes beyond just stats. As [HoosierDaddyKid](https://www.mavsboard.com/member.php?action=profile&uid=159) shared, NBA coach Jason Kidd believes Flagg should be considered for Rookie of the Year honors. And it's hard to argue with that assessment, given Flagg's consistent play and clutch performances.
+The Mavs' rebuild also involves evaluating their current roster and making potential trades. **Maxi Kleber** has been a topic of discussion, with some fans hoping he can improve his defense. As [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) noted, "I think defense is so hard for rookies... Cooper should be an elite defender in time, but you have seen him struggle with just how good these NBA players are." Kleber's shooting ability is undeniable, and [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) believes he's an asset: "I'm convinced he's an asset as a shooter, no matter what, and his familiarity with the team, combined with the team's obvious need for much more shooting means he's likely to factor prominently in their near-future plans."
 
-**Trade Rumors and Front Office Moves**
+The search for a new GM is also underway, with several candidates emerging. **Tim Connelly** and **Masai Ujiri** are reportedly on the Mavs' radar, according to [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404). As [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23) noted, "Noah Weber on The Smoking Cuban is reporting that Tim Connelly could be a primary target, depending on how MIN does in the playoffs." The Mavs' front office has a tough task ahead, but fans are hopeful that they'll make the right moves to build a winning team around Flagg and other young players.
 
-As the Mavs look to build on their young core, trade rumors are swirling. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) mentioned that Tim Connelly, the Minnesota Timberwolves' president of basketball operations, could be a target for the Mavs' front office. Connelly has a reputation for being a savvy talent evaluator, and his potential availability has fans excited.
+In other news, **Dariq Whitehead** impressed fans with his play, and some are calling for him to be offered a 2-way contract. As [Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504) said, "Offer him at least a 2-way contract and we are a step closer to the All-Duke Team." 
 
-However, not everyone is convinced that Connelly is the right fit. [FireNicoHarrison](https://www.mavsboard.com/member.php?action=profile&uid=4633) expressed skepticism, citing Connelly's role in the Jaden Ivey trade. The debate highlights the challenges of building a winning team and the importance of making smart front office moves.
-
-**Fan Reactions and Insights**
-
-The MavsBoard community is always passionate and knowledgeable, and this week's discussion threads were no exception. [Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504) joked that the only reason to play Flagg in the final game was to try and break Wilt Chamberlain's record. While that might be a stretch, it's clear that Flagg's play has fans excited for the future.
-
-[Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504) also brought up the topic of Dariq Whitehead, a young prospect who could be a valuable addition to the team's roster. [myconsumerclub](https://www.mavsboard.com/member.php?action=profile&uid=1016) chimed in with a humorous comment about Poulakidas, a player who's been impressing fans with his shooting abilities.
-
-**Looking Ahead**
-
-As the Mavs look to the future, it's clear that they have a strong foundation in place. With Flagg leading the charge, the team has a bright young core to build around. The 2026 NBA Draft lottery will be a crucial event for the franchise, and fans will be eagerly watching to see how the team positions itself for the future.
-
-In the meantime, fans will continue to debate the merits of different front office moves and player personnel decisions. But one thing is certain: the Mavs have a talented young team, and the future is looking bright.
-
-As [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) noted, the team's next game will be an important one, with fans eager to see how the team performs. And with the NBA draft and free agency on the horizon, there's no shortage of excitement and anticipation for what's to come.
-
-Stay tuned for more Mavs news and analysis, and don't miss the lively discussions on MavsBoard!
+As the Mavs continue their rebuild, fans are excited to see how the team will develop. With Flagg's historic season and potential trades on the horizon, the future is bright in Big D. And who knows? Maybe **Jason Kidd** is onto something with his ROY prediction for Flagg. As [HoosierDaddyKid](https://www.mavsboard.com/member.php?action=profile&uid=159) shared, "J Kidd believes CF is the ROY." One thing's for sure: Mavs fans are eager to see what the future holds.
 
 ---
 
