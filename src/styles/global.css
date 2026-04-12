@@ -222,12 +222,15 @@ p { margin: 0 0 1em; }
 	font-weight: 600;
 	transition: all 0.2s;
 }
-.prose hr ~ ul li a:hover,
-.prose hr ~ ul li a:hover strong {
+.prose hr ~ ul li a:hover {
 	background: var(--navy);
 	color: white !important;
 	text-decoration: none;
 	border-bottom: none;
+}
+.prose hr ~ ul li a strong {
+	color: inherit;
+	background: none !important;
 }
 
 /* Source posts section — styled card */
