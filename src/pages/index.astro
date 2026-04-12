@@ -1,8 +1,20 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Footer from '../components/Footer.astro';
+import HeroPost from '../components/HeroPost.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const posts = (await getCollection('blog'))
+	.filter(p => p.data.title !== 'Welcome to MavsBoard Blog')
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const heroPost = posts[0];
+const featuredPosts = posts.slice(1, 4);
+const remainingPosts = posts.slice(4);
 ---
 
 <!doctype html>
@@ -13,37 +25,98 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<div class="container">
+				{heroPost && (
+					<section class="hero-section">
+						<HeroPost
+							title={heroPost.data.title}
+							description={heroPost.data.description}
+							pubDate={heroPost.data.pubDate}
+							slug={heroPost.id}
+							tags={heroPost.data.tags}
+						/>
+					</section>
+				)}
+
+				{featuredPosts.length > 0 && (
+					<section class="featured-grid">
+						{featuredPosts.map(post => (
+							<ArticleCard
+								title={post.data.title}
+								description={post.data.description}
+								pubDate={post.data.pubDate}
+								slug={post.id}
+								tags={post.data.tags}
+								variant="vertical"
+							/>
+						))}
+					</section>
+				)}
+
+				<div class="content-layout">
+					<section class="article-feed">
+						<h2 class="section-heading">Latest Articles</h2>
+						{remainingPosts.map(post => (
+							<ArticleCard
+								title={post.data.title}
+								description={post.data.description}
+								pubDate={post.data.pubDate}
+								slug={post.id}
+								tags={post.data.tags}
+								variant="horizontal"
+							/>
+						))}
+					</section>
+
+					<Sidebar />
+				</div>
+			</div>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	main {
+		padding: 1.5rem 0;
+	}
+	.hero-section {
+		margin-bottom: 1.5rem;
+	}
+	.featured-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.25rem;
+		margin-bottom: 2rem;
+	}
+	.content-layout {
+		display: grid;
+		grid-template-columns: 1fr 320px;
+		gap: 2rem;
+		align-items: start;
+	}
+	.article-feed {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+	.section-heading {
+		font-size: 1.1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		color: var(--navy);
+		margin: 0;
+		padding-bottom: 0.5rem;
+		border-bottom: 2px solid var(--blue-light);
+	}
+	@media (max-width: 1024px) {
+		.content-layout {
+			grid-template-columns: 1fr;
+		}
+	}
+	@media (max-width: 768px) {
+		.featured-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

@@ -1,0 +1,28 @@
+---
+interface Props {
+	tag: string;
+}
+const { tag } = Astro.props;
+
+const badgeClasses: Record<string, string> = {
+	featured: 'badge-featured',
+	news: 'badge-news',
+	'trade-rumors': 'badge-trade-rumors',
+	draft: 'badge-draft',
+	'tank-watch': 'badge-draft',
+	'game-recap': 'badge-game-recap',
+	offseason: 'badge-offseason',
+	'salary-cap': 'badge-offseason',
+	analysis: 'badge-analysis',
+	nba: 'badge-analysis',
+	'front-office': 'badge-analysis',
+	fun: 'badge-fun',
+	opinion: 'badge-fun',
+	'weekly-digest': 'badge-weekly-digest',
+};
+
+const label = tag.replace(/-/g, ' ');
+const cls = badgeClasses[tag] || 'badge-default';
+---
+
+<span class={`badge ${cls}`}>{label}</span>

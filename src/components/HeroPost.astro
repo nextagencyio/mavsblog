@@ -1,0 +1,77 @@
+---
+import FormattedDate from './FormattedDate.astro';
+import CategoryBadge from './CategoryBadge.astro';
+
+interface Props {
+	title: string;
+	description: string;
+	pubDate: Date;
+	slug: string;
+	tags?: string[];
+}
+
+const { title, description, pubDate, slug, tags = [] } = Astro.props;
+const displayTag = tags.find(t => t !== 'featured') || tags[0];
+---
+
+<a href={`/blog/${slug}/`} class="hero-post">
+	<div class="hero-overlay">
+		<div class="hero-content">
+			{displayTag && <CategoryBadge tag={displayTag} />}
+			<h2 class="hero-title">{title}</h2>
+			<p class="hero-desc">{description}</p>
+			<span class="hero-date"><FormattedDate date={pubDate} /></span>
+		</div>
+	</div>
+</a>
+
+<style>
+	.hero-post {
+		display: block;
+		position: relative;
+		width: 100%;
+		min-height: 360px;
+		background: linear-gradient(135deg, #00285E 0%, #0053BC 50%, #0b1a2e 100%);
+		border-radius: var(--radius);
+		overflow: hidden;
+		text-decoration: none;
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+	.hero-post:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--box-shadow-hover);
+		text-decoration: none;
+	}
+	.hero-overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 2.5rem 2rem;
+		background: linear-gradient(transparent, rgba(0,0,0,0.7));
+	}
+	.hero-content {
+		max-width: 700px;
+	}
+	.hero-title {
+		color: white;
+		font-size: 2rem;
+		margin: 0.5rem 0;
+		line-height: 1.2;
+	}
+	.hero-desc {
+		color: rgba(255,255,255,0.85);
+		font-size: 1rem;
+		margin: 0.5rem 0;
+		line-height: 1.5;
+	}
+	.hero-date {
+		color: rgba(255,255,255,0.6);
+		font-size: 0.85rem;
+	}
+	@media (max-width: 768px) {
+		.hero-post { min-height: 280px; }
+		.hero-title { font-size: 1.5rem; }
+		.hero-overlay { padding: 1.5rem 1rem; }
+	}
+</style>
