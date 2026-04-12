@@ -1,35 +1,61 @@
 ---
-title: "MavsBoard Buzz: Lottery Odds, Celtics' Dominance, and Laker Woes"
-description: "Mavs fans discuss NBA news, from Boston's strong season to LA's struggles and the Pacers' lottery luck."
-pubDate: "2026-04-12T00:59:42.444Z"
+title: "MavsBoard Buzz: Lottery Luck, Lakers' Woes, and a Dynasty in the Making?"
+description: "Mavs fans react to NBA news: Pacers' lottery odds, Lakers' struggles, and the Spurs' potential disaster"
+pubDate: "2026-04-12T01:17:26.810Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=2171"
 tags: ["nba", "analysis"]
 heroImage: "../../assets/thumbnails/2026-04-12-around-the-nba.jpg"
 ---
 
-The NBA season is heating up, and MavsBoard community members are buzzing about the latest developments. [HoosierDaddyKid](https://www.mavsboard.com/member.php?action=profile&uid=159) kicked off the conversation by sharing some impressive stats. LeBron James just became the first non-point guard to reach 12,000 assists - a testament to his incredible court vision and versatility. Meanwhile, Jaylen Brown is on track to finish 5th in MVP voting, which is no surprise given his stellar performance this season.
+The NBA world is heating up, and MavsBoard community members are buzzing about the latest developments. From the Pacers' lottery luck to the Lakers' woes, our community is weighing in on it all.
 
-But what's really got everyone talking is the Pacers' tanking strategy. [HoosierDaddyKid](https://www.mavsboard.com/member.php?action=profile&uid=159) shared a tweet from Alex Golden NBA, noting that Indiana has secured a bottom-three record, giving them the best lottery odds to land the number 1 pick. And let's be real, who wouldn't want to add a top talent to their roster? The Pacers' rebuild is going to be a fascinating story to follow.
+[HoosierDaddyKid](https://www.mavsboard.com/member.php?action=profile&uid=159) kicked off the discussion with some impressive stats:
 
-[cow](https://www.mavsboard.com/member.php?action=profile&uid=92) had a stark assessment of the team's medical staff: "Kind of crazy that we went from one of the best medical staffs to whatever this mess is." Ouch, harsh words! The Mavs' injury woes have been well-documented, and it's clear that fans are frustrated.
+> "LBJ becomes the first non-point guard to reach 12,000 assists. Jaylen Brown is on track to finish 5th in MVP voting. The first game in NBA history that 3 different players had a triple-double in the same game."
 
-The Celtics are dominating the Eastern Conference, and [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) thinks they're the clear favorite to come out of the East: "Boston looks primed to be the favorite to come out of the east. What a freakin amazing season from them." With Tatum back in the lineup, they're looking almost unbeatable.
+Meanwhile, [HoosierDaddyKid](https://www.mavsboard.com/member.php?action=profile&uid=159) also shared some news that caught our attention:
 
-On the other side of the spectrum, the Lakers are struggling. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) noted that they're likely to finish 4th or 5th, with a slew of injury questions looming. Will they be able to turn it around before the playoffs?
+> "The Pacers have secured a bottom-three record. They'll have the best lottery odds to land the number 1 pick, and a top 4 pick"
 
-The Mavs' own rebuild is a topic of discussion, with [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) imagining a scary scenario: "Can you imagine if the Spurs had landed #1??? They could've sported a lineup of Fox, Castle, Flagg and Wemby." Okay, that's a bit of a stretch, but it's fun to dream! 
+This got [Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97) thinking:
 
-Cooper Flagg, the highly touted prospect, is a beacon of hope for Mavs fans. [Knutsen](https://www.mavsboard.com/member.php?action=profile&uid=963) mused about what could've been if the Mavs hadn't landed him: "Would there be any hope left for the next 10 years being a Mavs fan after seeing how the AD disaster ended?" Thankfully, that's not a question we need to answer.
+> "I'd be fine with that if it was because the Mavs moved up, but I certainly have no animus against Carlisle and the Pacers."
 
-Some fans are still reeling from past disappointments. [ballsrchr](https://www.mavsboard.com/member.php?action=profile&uid=71) shared a candid reflection: "I've already experienced [Mavs mediocrity]. I'm still here. The problem is--I may not have 10 years left." We're glad you're still here, ballsrchr!
+But let's be real, who wouldn't want to see the Mavs make a splash in the lottery? [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) had a chilling thought:
 
-As the season winds down, MavsBoard members are looking ahead to the lottery and the draft. [loki](https://www.mavsboard.com/member.php?action=profile&uid=390) is rooting for the Clippers to fall to #5: "I hate that they're making me root for the Clippers." Who can blame him?
+> "You wanna talk scary? Can you imagine if the Spurs had landed #1??? They could've sported a lineup of Fox, Castle, Flagg and Wemby. They could've played your 85 year old Aunt Sylvia at SF and still won 10 straight championships."
 
-The NBA's pace-of-play debate continues, with [Winter](https://www.mavsboard.com/member.php?action=profile&uid=618) sharing an interesting read from ESPN: "The slower teams frequently have the best records. Faster teams generally the worst." Food for thought!
+On the other end of the spectrum, the Lakers are struggling. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) weighed in:
 
-Lastly, [numnuts23](https://www.mavsboard.com/member.php?action=profile&uid=573) played a fun "what if" game, wondering what the Mavs' roster might look like if they hadn't traded for AD: "We probably draft Carter Bryant or Walter Clayton Jr." Alternate histories are always entertaining!
+> "The two marquee franchises are at an interesting spot. Boston looks primed to be the favorite to come out of the east.  What a freakin amazing season from them.  Even in a weakened east, I never thought they would be where they are now.  Now they have Tatum back!  There are other contenders but to me they are the clear favorite. The lakers on the other hand look set at 4 or 5, with a ton of  injury questions."
 
-As we close out this edition of MavsBoard Buzz, one thing's for sure: the NBA is full of surprises, and Mavs fans are ready for whatever comes next. And if the Mavs do land Cooper Flagg, [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) has a warning for the rest of the league: "They could've played your 85 year old Aunt Sylvia at SF and still won 10 straight championships." Okay, maybe that's a bit of an exaggeration, but a fan can dream, right?
+[Loki](https://www.mavsboard.com/member.php?action=profile&uid=390) isn't thrilled about the prospect of the Clippers rising:
+
+> "I hate that they're making me root for the Clippers. Fingers crossed that pick falls to #5."
+
+The Mavs' recent draft haul has our community feeling hopeful. [Knutsen](https://www.mavsboard.com/member.php?action=profile&uid=963) reflected on what could've been:
+
+> "And then imagine for a second Coop wasn’t ours - would there be any hope left for the next 10 years being a Mavs fan after seeing how the AD disaster ended?"
+
+[Ballsrchr](https://www.mavsboard.com/member.php?action=profile&uid=71) is keeping the faith:
+
+> "Ah man.  I don't have to imagine 10 years of Mavs mediocrity (or worse).  I've already experienced it.  I'm still here.  The problem is--I may not have 10 years left.  So Cooper Flagg, the new GM, and the team they will build now is my last hurrah.  They've got to get it right this time."
+
+Our community is also discussing the pace of NBA games. [Winter](https://www.mavsboard.com/member.php?action=profile&uid=618) shared an interesting read:
+
+> "Interesting read about the pace of NBA games. The slower teams frequently have the best records. Faster teams generally the worst."
+
+As we wrap up this update, [numnuts23](https://www.mavsboard.com/member.php?action=profile&uid=573) offered a thought-provoking scenario:
+
+> "Was thinking about that the other day.  Just playing the what if game We probably draft Carter Bryant or Walter Clayton Jr. I'm guessing Dallas does not trade AD for pennies on the dollar and even with the injuries, likely signs him to an extension....as there isn't any reason to get the cap space and quickly move into a new window."
+
+The MavsBoard community is always buzzing with hot takes and lively discussions. Stay tuned for more updates from around the NBA and Mavs nation!
+
+And finally, [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) left us with a parting thought:
+
+> "Kind of crazy that we went from one of the best medical staffs to whatever this mess is."
+
+Ouch, burn!
 
 ---
 

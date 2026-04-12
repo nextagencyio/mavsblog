@@ -1,39 +1,41 @@
 ---
 title: "MavsBoard Debate: To Trade or Not to Trade Kyrie Irving?"
-description: "Mavs fans weigh in on Kyrie's future after ACL injury"
-pubDate: "2026-04-12T00:59:25.878Z"
+description: "Mavs fans are divided on what to do with Kyrie Irving after his ACL injury - trade him for draft picks or keep him as a veteran leader?"
+pubDate: "2026-04-12T01:17:09.359Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=3856"
 tags: ["trade-rumors", "featured"]
 heroImage: "../../assets/thumbnails/2026-04-12-kyrie-future-debate.jpg"
 ---
 
-The MavsBoard community is buzzing with debates about Kyrie Irving's future with the Dallas Mavericks. After tearing his ACL, the fanbase is divided on whether to trade him for draft picks or keep him as a veteran leader for Cooper Flagg's development. 
+The MavsBoard community is buzzing with debates on what to do with Kyrie Irving after his ACL injury. Some fans think it's time to cut ties and trade him for draft picks, while others believe he's still a valuable asset as a veteran leader for [Cooper Flagg](https://www.mavsboard.com/member.php?action=profile&uid=0)'s development.
 
-Some fans, like [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482), think it's time to cut ties: 
-> "I don't think adding Kyrie to the mix is going to move the needle much on his value and would rather get whatever we can for him this summer before he becomes a negative asset."
+[Mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) kicked off the discussion with a pragmatic take:
 
-On the other hand, fans like [RoyTarpleysGhost](https://www.mavsboard.com/member.php?action=profile&uid=881) believe Kyrie can still be a valuable asset:
-> "Let him get healthy, play next to Kyrie and Flagg, and rehab some trade value next year. We already saw he doesn't have much trade value right now."
+> "I don't think adding Kyrie to the mix is going to move the needle much on his value and would rather get whatever we can for him this summer before he becomes a negative asset, but maybe he is already there."
 
-The Mavs' lack of assets is a major concern. As [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) pointed out, "The Mavs don't have an asset worth a lottery pick (other than Flagg)." This makes the upcoming draft crucial for the team's future. 
+He's not alone in thinking that trading Kyrie might be the best option. [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) chimed in with a potential trade idea:
 
-[Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504) shared a potential offseason plan:
-> "Irving/X/X
-Christie/Thompson/Johnson
-Marshall/Martin/X
-Flagg/Washington/Bagley
-Lively/Gafford/Cisse
-MLE + two 1st round picks."
+> "I wonder if a Gafford for S&T Ivey might be in order. If Dallas stays under the first apron next season, the $7.5mm spread applies. That infers maximum starting salaries"
 
-This plan assumes the Mavs will draft a guard and potentially trade for a veteran player to support Kyrie and Flagg. [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) even floated a wild idea:
-> "Could I talk myself into a Morant reclamation project? He's hurt. Could that elbow injury be parlayed into a season-ending injury? Could Kyrie be a positive influence to help rebuild his value and then trade him next TDL or the following offseason?"
+On the other hand, [RoyTarpleysGhost](https://www.mavsboard.com/member.php?action=profile&uid=881) thinks the Mavs should hold onto Kyrie:
 
-While Morant's situation is complicated, it's clear that the Mavs have tough decisions ahead. As [vfromlmf](https://www.mavsboard.com/member.php?action=profile&uid=99) noted, building through the draft is key:
-> "It's going to be hard to build this thing like we want it to look through free agency or trades alone. The core of OKC, SA and HOU were all built through the draft..."
+> "The Mavs are one of the worst teams in the league. Gafford is the only functional center on the roster. All this talk of trading him because he is not the ideal starting Center on a championship team is about 4-5 years premature. Let him get healthy, play next to Kyrie and Flagg, and rehab some trade value next year."
 
-The Mavs' front office has a tough task ahead, but one thing's for sure: the team's future will be shaped by their decisions on Kyrie Irving. Will they trade him for draft picks or keep him as a veteran leader? Only time will tell.
+[Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504) has a different perspective:
 
-As for me? I'm Team Trade Kyrie. Don't get me wrong, I love the guy's skills, but with an ACL tear and a crowded backcourt, it's time to cash in on his value. The Mavs need assets, and Kyrie's injury makes him a ticking time bomb. Let's get those draft picks and build for the future. Morant, anyone?
+> "Irving/X/X Christie/Thompson/Johnson Marshall/Martin/X Flagg/Washington/Bagley Lively/Gafford/Cisse MLE + two 1st round picks."
+
+He thinks the Mavs will draft a guard and use the MLE to sign a player like Sexton, Simons, or White to spare Kyrie during the regular season.
+
+[Cow](https://www.mavsboard.com/member.php?action=profile&uid=92) has a wild idea:
+
+> "I wonder what those picks are? Surely not Memphis first rounders. And could I talk myself into a Morant reclamation project? He's hurt. Could that elbow injury be parlayed into a season ending injury? Could Kyrie be a positive influence to help rebuild his value and then trade him next TDL or the following offseason?"
+
+[Vfromlmf](https://www.mavsboard.com/member.php?action=profile&uid=99) offers a broader perspective:
+
+> "It's going to be hard to build this thing like we want it to look through free agency or trades alone. The core of OKC, SA and HOU were all built through the draft and they've filled out the rotation through trades and free agency."
+
+As the discussion continues, one thing is clear: Mavs fans are divided on what to do with Kyrie Irving. But here's a hot take: I think the Mavs should keep Kyrie and let him mentor Cooper Flagg. It might not be the most valuable trade asset, but it's a chance to build a winning culture and develop a young star. And who knows, maybe Kyrie's ACL injury will be a blessing in disguise.
 
 ---
 

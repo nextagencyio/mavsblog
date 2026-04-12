@@ -1,27 +1,51 @@
 ---
-title: "Mavs Recap Roundup: Tanking, Rookies, and Frustration"
-description: "A recap of Mavs' recent games, focusing on player development, Cooper Flagg's play, and fan reactions."
-pubDate: "2026-04-12T00:59:59.687Z"
+title: "MavsBoard Recap: Tanking, Rookies, and Frustrations"
+description: "A roundup of fan reactions from MavsBoard on the team's recent games against the Bucks, Warriors, and Cavs."
+pubDate: "2026-04-12T01:17:44.829Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4277"
 tags: ["game-recap"]
 heroImage: "../../assets/thumbnails/2026-04-12-game-recaps-0.jpg"
 ---
 
-The Dallas Mavericks wrapped up a trio of games that had fans talking - and not always in a good way. With the team in full-on rebuild mode, everyone's eyes are on the young guns, particularly Cooper Flagg. Let's dive into the highs, lows, and best fan takes from the Mavs' recent outings against the Milwaukee Bucks and Golden State Warriors, and a previous game against the Cleveland Cavaliers.
+The Dallas Mavericks are in the midst of a rebuild year, and fans are along for the ride. This week, the team played three games against the Milwaukee Bucks, Golden State Warriors, and Cleveland Cavaliers, providing plenty of material for discussion on MavsBoard. 
 
-In the [Game 76](https://www.mavsboard.com/thread-118386-game-76-dallas-mavericks-24-51-milwaukee-bucks-29-45-7-00-cst) against the Bucks, fans were resigned to the fact that tanking is a real thing. **cow** ([cow](https://www.mavsboard.com/member.php?action=profile&uid=92)) quipped, "The tank tolls for thee." The Mavs indeed lost, but some fans found solace in the play of certain players. Meanwhile, in [Game 72](https://www.mavsboard.com/thread-118371-game-72-dallas-mavericks-23-48-vs-gs-warriors-33-38-8-30-cst-peacock-nbcsn) against the Warriors, **Chicagojk** ([Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404)) noted Cooper Flagg's growth, but also his mistakes: "He was good but him and Marshall combined for 15 turnovers. Probably the number one reason we are celebrating a loss."
+The Bucks game was a prime example of the team's tanking efforts. As [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) joked, "The tank tolls for thee." The Mavs struggled, and fans were expecting a tough game on the second night of a back-to-back on the road. [Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97) had faith in the team, but it wasn't meant to be.
 
-The game against the Cleveland Cavaliers (Game 67) seems to have faded into the background, but **ThisIStheYear** ([ThisIStheYear](https://www.mavsboard.com/member.php?action=profile&uid=103)) recently expressed frustration with Flagg's recent play, stating, "Apparently another super inefficient game from Flagg. His ROY chances must be dead and gone at this point. It’s time to shut him down." Ouch. **RasheedsBigWhiteSpot** ([RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171)) responded with a simple "Or not," implying that Flagg still has a future.
+> "This will be a very tough game to tank, but on the second night of a back to back on the road, I have faith in our boys in blue to get the job done." - [Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97)
 
-Cooper Flagg's development is a major storyline for the Mavs this season. **michaeltex** ([michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23)) observed, "Coop looked good at times and like a rookie at other times." Flagg's growth is a silver lining in an otherwise trying season. He's shown flashes of brilliance, but consistency is key. As **cow** noted, "He needs to work on his handle in the summer if he's going to handle the ball so much on this level."
+In the Warriors game, rookie Cooper Flagg had a standout performance, but it was marred by turnovers. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) noted that Flagg and teammate Naji Marshall combined for 15 turnovers, which was a significant factor in the team's loss.
 
-The Mavs' loss to the Warriors was particularly galling for fans, with **Unknown** ([Unknown](https://www.mavsboard.com/member.php?action=profile&uid=0)) lamenting, "What an L... I went to bed at halftime with the Mavs up 10. Thought for sure this would be one of the games they'd win to finish up the season." **michaeltex** joked, "Fun game, but it feels weird to be sweating out a loss rather than a win..." 
+> "He was good but him and Marshall combined for 15 turnovers.  Probably the number one reason we are celebrating a loss." - [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404)
 
-Fans also weighed in on the team's coaching and strategy. **Winter** ([Winter](https://www.mavsboard.com/member.php?action=profile&uid=618)) defended the team's approach, stating, "> If you're tanking, that's good coaching." Not everyone agreed, with **DallasMaverick** ([DallasMaverick](https://www.mavsboard.com/member.php?action=profile&uid=352)) suggesting that coach Jason Kidd's playcalls were questionable at times.
+Despite the turnovers, Flagg showed promise, and fans are excited about his development. However, some were critical of his decision-making, particularly in the fourth quarter. [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23) pointed out that Flagg seemed to get frustrated with contact and non-calls, which led to some questionable plays.
 
-As the Mavs continue their rebuild, fans will be watching closely to see how Flagg and the young core develop. Will they take a leap next season? Only time will tell. For now, fans will have to content themselves with the occasional bright spot in an otherwise dark season. As **cow** put it, "I'm also sure that outside shooting and his handles when faced with a point of attack defender will be top of his list this summer." Here's to hoping that Flagg and company can make some strides.
+> "Coop looked good at times and like a rookie at other times. Moody was a particular pest and I could see Coop getting a little frustrated. Some 4th quarter turnovers were due to giving him the ball just over halfcourt and getting blitzed in that corner without getting a foul call." - [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23)
 
-The Mavs' next games are against the Portland Trail Blazers and Los Angeles Clippers, so we'll see if they can sneak out a few more wins or if tank mode takes over. One thing's for sure: Mavs fans will be watching with bated breath. And who knows? Maybe next season will be the year the Mavs turn it all around. A fan can dream, right?
+The Cavs game wasn't included in the provided context, but fans were still discussing the team's recent performances. [ThisIStheYear](https://www.mavsboard.com/member.php?action=profile&uid=103) expressed frustration with Flagg's recent play, suggesting that his Rookie of the Year chances are "dead and gone." 
+
+> "Apparently another super inefficient game from Flagg.  His ROY chances must be dead and gone at this point. It’s time to shut him down. It’s been a long year. I’d rather he not have to experience this last part. No one watches the Mavs anymore anyways." - [ThisIStheYear](https://www.mavsboard.com/member.php?action=profile&uid=103)
+
+In response, [RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) simply replied, "Or not," implying that Flagg still has a chance to turn things around.
+
+As the season winds down, Mavs fans are focused on player development and the team's future prospects. [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23) joked about giving the "anti-Dirkie" to teammate Max Christie, suggesting that he's embracing the tanking methodology.
+
+> "Can we give the anti-Dirkie to Christie? He really seems to have embraced the tanking methodology." - [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23)
+
+The team's next games are against the Portland Trail Blazers and Los Angeles Clippers, which will be crucial in determining their final standing. For now, fans will continue to watch and discuss the team's progress, with a mix of frustration and optimism. As [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) noted, "I'm also sure that outside shooting and his handles when faced with a point of attack defender will be top of his list this summer."
+
+The Mavs' rebuild year might not be the most exciting, but it's a necessary step towards a brighter future. And who knows, maybe Flagg will develop into a star, and the team's tanking efforts will pay off in the long run. Until then, fans will continue to ride the tanking train, with all its ups and downs. 
+
+As [Winter](https://www.mavsboard.com/member.php?action=profile&uid=618) put it:
+
+> "If you're tanking, that's good coaching." 
+
+The Mavs' rebuild year is all about growth, and fans are eager to see what the future holds. One thing's for sure – it's going to be an interesting ride. 
+
+The final take from [DallasMaverick](https://www.mavsboard.com/member.php?action=profile&uid=352) really summed it up: 
+
+Training staff. 
+
+Or maybe just a few more years of tanking...
 
 ---
 

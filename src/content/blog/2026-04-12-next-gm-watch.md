@@ -1,49 +1,67 @@
 ---
-title: "MavsBoard's Quest for the Perfect Front Office Genius"
-description: "Fans weigh in on the ideal GM/President of Basketball Operations to lead the Mavs to success"
-pubDate: "2026-04-12T00:59:48.281Z"
+title: "MavsBoard Debate: Who's the Next Big Cheese in the Mavs' Front Office?"
+description: "Mavs fans are going wild discussing who should be the next GM/President of Basketball Operations, and we've got the scoop on their top picks and debate highlights."
+pubDate: "2026-04-12T01:17:32.747Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4035"
 tags: ["front-office", "featured"]
 heroImage: "../../assets/thumbnails/2026-04-12-next-gm-watch.jpg"
 ---
 
-The MavsBoard community is abuzz with debate over who should be the next Dallas Mavericks GM/President of Basketball Operations. After a tumultuous season, fans are eager to see a change in the front office and a clear direction for the team. And let's be real, who wouldn't want to make decisions for a team with an owner who's basically a magical money tree?
+The Mavs' front office shakeup has everyone buzzing, and we're not just talking about the Anthony Davis trade (although, let's be real, that was a big one). The real question on everyone's mind is: who's next in charge? Mark Cuban's got deep pockets, and he's willing to spend to get the best, but who does that mean?
 
-The discussion started with a Dallas Morning News article that mentioned Chicago Bulls executive Bilton Sezy as a potential candidate, along with Rob Pelinka's name being floated. But [F Gump](https://www.mavsboard.com/member.php?action=profile&uid=412) was quick to point out that his own suggestion, Bulls GM Arturas Karnisovas (aka Presti), was also mentioned: 
+[F Gump](https://www.mavsboard.com/member.php?action=profile&uid=412) kicked off the discussion with a mention of the Dallas Morning News' short list of potential candidates, which included our own favorite, Billy Presti. Now, we know what you're thinking: Presti's a tough get, but [F Gump](https://www.mavsboard.com/member.php?action=profile&uid=412) makes a solid point:
 
-> "For those who have wanted to laugh at my idea of Presti as the new guy in charge, the DMN is jumping on my bandwagon. They didn't mention Presti alone, but he was the 2nd name on their short list. And their article takes the very same approach I believe in - ending with the same type of people in mind - that the Mavs need an EXPERT, they have an owner with incredibly deep pockets, and he needs to hire the best. PERIOD."
+> "high level EXPERT execs at the GM level do get hired away. Money talks, when the owner is willing to spend."
 
-[F Gump](https://https://www.mavsboard.com/member.php?action=profile&uid=412) isn't the only one who thinks the Mavs need an expert. Many fans agree that the team needs someone with a proven track record of success, someone who can make smart decisions and help the team build a winning culture. 
+[cow](https://www.mavsboard.com/member.php?action=profile&uid=92) jumped on [F Gump](https://www.mavsboard.com/member.php?action=profile&uid=412)'s coattails, quipping:
 
-But what about Jason Kidd? Some fans are worried that he'll get the GM job, and [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) isn't having it: 
+> "Don't you mean, 'our idea'?"
 
-> "Kidd would be disaster.  I can't wait until we wash our hands of him completely which means he'll almost certainly be the next GM."
+Fair enough, [cow](https://www.mavsboard.com/member.php?action=profile&uid=92)!
 
-Even [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) isn't a fan of Kidd in the GM role: 
+The discussion is heating up, with some fans thinking the Mavs will keep the current structure intact, with Riccardi and Finley reporting to a new President of Basketball Operations. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) thinks this might be the way to go:
 
-> "I would not be in favor of Kidd being GM.  When Ricardi named popped up someone said if got the job that it would mean Kidd has influence.  I wonder if something like this is the outcome.  Ricardi is the GM responsible for scouting and most GM roles.  Kidd takes the Role Nico was supposedly moving to."
+> "I just get the feeling that Ricardi and Finley will stay in similar roles, and the new guy brought in is the President of operations role and not a true GM."
 
-The debate over Kidd's potential role is heating up, with some fans speculating that he could take on a more significant front office position. [Chicagojk](https://https://www.mavsboard.com/member.php?action=profile&uid=404) thinks it's possible that Kidd could become the President of Basketball Operations, with Ricardi and Finley reporting to him.
+[DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) chimes in, cautioning that Cuban shouldn't tie the hands of the new top dog:
 
-Some fans are suggesting other candidates, like Zach Kleiman, who has done a great job in Memphis. [loki](https://www.mavsboard.com/member.php?action=profile&uid=390) thinks he's a good fit: 
+> "But, you never want to tie the hands of the top guy and say you have to retain these guys that are already here. That's a surefire way to run off the very best out there who will have their own relationships they prefer."
 
-> "Zach Kleiman, anyone? He drafts well, gets good value in trades, and is theoretically more obtainable than Presti. He put together a good squad in Memphis before they were derailed by injuries/Ja going off the deep end."
+Meanwhile, some fans are throwing around names like Zach Kleiman and Bob Myers. [loki](https://www.mavsboard.com/member.php?action=profile&uid=390) makes the case for Kleiman:
 
-Others are bringing up Bob Myers, who had a successful stint in Golden State. 
+> "Zach Kleiman, anyone? He drafts well, gets good value in trades, and is theoretically more obtainable than Presti."
 
-The Anthony Davis trade has also sparked discussion, with some fans giving credit to the current front office for getting rid of his massive contract. [ThisIStheYear](https://www.mavsboard.com/member.php?action=profile&uid=103) thinks they did a good job: 
+And then there's the Jason Kidd speculation. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) isn't buying it:
 
-> "The current team did a pretty good job with the Davis trade. Credit where credit is due. Can they draft?  This upcoming pick has a lot riding on it. Obtaining a second star is essential."
+> "I would not be in favor of Kidd being GM. When Ricardi named popped up someone said if got the job that it would mean Kidd has influence."
 
-Of course, not everyone is optimistic about the team's front office. [FireNicoHarrison](https://www.mavsboard.com/member.php?action=profile&uid=4633) has a... colorful take on Mark Cuban's abilities: 
+[F Gump](https://www.mavsboard.com/member.php?action=profile&uid=412) agrees:
 
-> "Dumont can't even do himself a coffe. He is a moron."
+> "I have no interest whatsoever in seeing Kidd promoted to GM. To me, it feels like a weak and lazy hire."
 
-While we can't all agree on who's the best fit for the GM/President of Basketball Operations role, one thing's for sure: Mavs fans are ready for a change and a fresh start. And if that means bringing in someone like Presti or Kleiman, so be it. 
+[cow](https://www.mavsboard.com/member.php?action=profile&uid=92) is even more blunt:
 
-As for me? I'm team Presti all the way. Bring on the expert, and let's get this team back on track! 
+> "Kidd would be disaster."
 
-So, who's your pick for the next Mavs GM/President of Basketball Operations? Let's make some noise and get the front office we deserve!
+On the other hand, [ThisIStheYear](https://www.mavsboard.com/member.php?action=profile&uid=103) thinks the current team did a decent job with the Davis trade:
+
+> "The current team did a pretty good job with the Davis trade. Credit where credit is due. Can they draft? This upcoming pick has a lot riding on it. Obtaining a second star is essential."
+
+But [FireNicoHarrison](https://www.mavsboard.com/member.php?action=profile&uid=4633) isn't having it:
+
+> "Dumont can't even do himself a coffee. He is a moron."
+
+As for [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482), they're still holding out hope that Isaac still has a chance:
+
+> "Issac still thinks there is a chance. He called the AD salary dump."
+
+The MavsBoard community is going wild with theories and opinions. One thing's for sure: whoever Cuban chooses, it's going to be a wild ride.
+
+So, who's your pick? A Presti-type expert or someone from within? Let's get the conversation started! 
+
+My two cents? Cuban's gotta bring in someone with some serious clout. Maybe someone like Presti or Kleiman? Whoever it is, I hope they're ready for the Luka Doncic era. 
+
+Prediction: The Mavs will shock everyone and snag a top candidate like Presti or Myers. And if they don't? Well, we'll just have to wait and see...
 
 ---
 
