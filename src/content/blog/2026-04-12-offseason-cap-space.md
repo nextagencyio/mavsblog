@@ -4,6 +4,7 @@ description: "MavsBoard community discusses Dallas Mavericks' salary cap situati
 pubDate: "2026-04-12T00:03:20.115Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=3856"
 tags: ["offseason", "salary-cap"]
+heroImage: "../../assets/thumbnails/2026-04-12-offseason-cap-space.jpg"
 ---
 
 

@@ -4,6 +4,7 @@ description: "A recap of the Dallas Mavericks' game against the Sacramento Kings
 pubDate: "2026-04-12T00:03:59.903Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4207"
 tags: ["game-recap"]
+heroImage: "../../assets/thumbnails/2026-04-12-game-recaps-6.jpg"
 ---
 
 

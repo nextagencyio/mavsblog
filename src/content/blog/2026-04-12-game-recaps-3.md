@@ -4,6 +4,7 @@ description: "Dallas Mavericks' recent games against Boston Celtics and Orlando 
 pubDate: "2026-04-12T00:03:54.008Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4218"
 tags: ["game-recap"]
+heroImage: "../../assets/thumbnails/2026-04-12-game-recaps-3.jpg"
 ---
 
 

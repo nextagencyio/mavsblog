@@ -4,6 +4,7 @@ description: "A recap of Dallas Mavericks' recent games, focusing on player deve
 pubDate: "2026-04-12T00:03:48.042Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4277"
 tags: ["game-recap"]
+heroImage: "../../assets/thumbnails/2026-04-12-game-recaps-0.jpg"
 ---
 
 

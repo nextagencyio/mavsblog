@@ -4,6 +4,7 @@ description: "MavsBoard community members weigh in on a hypothetical NBA rule ch
 pubDate: "2026-04-12T00:04:05.454Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4244"
 tags: ["fun", "opinion"]
+heroImage: "../../assets/thumbnails/2026-04-12-three-point-dunk-rule.jpg"
 ---
 
 

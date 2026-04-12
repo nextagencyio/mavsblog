@@ -4,6 +4,7 @@ description: "Catch up on the latest Dallas Mavericks discussions, from the next
 pubDate: "2026-04-12T00:04:11.509Z"
 forumUrl: "https://www.mavsboard.com"
 tags: ["weekly-digest", "featured"]
+heroImage: "../../assets/thumbnails/2026-04-12-weekly-digest.jpg"
 ---
 
 

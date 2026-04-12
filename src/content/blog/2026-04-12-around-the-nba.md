@@ -4,6 +4,7 @@ description: "Mavs fans discuss league-wide news, team moves, and their impact o
 pubDate: "2026-04-12T00:03:31.476Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=2171"
 tags: ["nba", "analysis"]
+heroImage: "../../assets/thumbnails/2026-04-12-around-the-nba.jpg"
 ---
 
 

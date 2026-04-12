@@ -4,6 +4,7 @@ description: "Catch up on the latest Dallas Mavericks news, fan reactions, and i
 pubDate: "2026-04-12T00:03:08.596Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=2172"
 tags: ["news", "featured"]
+heroImage: "../../assets/thumbnails/2026-04-12-mavs-news-this-week.jpg"
 ---
 
 

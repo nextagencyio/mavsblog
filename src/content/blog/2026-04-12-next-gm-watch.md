@@ -4,6 +4,7 @@ description: "Dallas Mavericks fans discuss the ideal candidate for GM/President
 pubDate: "2026-04-12T00:03:37.002Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4035"
 tags: ["front-office", "featured"]
+heroImage: "../../assets/thumbnails/2026-04-12-next-gm-watch.jpg"
 ---
 
 

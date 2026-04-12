@@ -3,6 +3,7 @@ title: "Welcome to MavsBoard Blog"
 description: "The official blog for MavsBoard.com - Dallas Mavericks news, fan discussion, and community insights."
 pubDate: "2026-04-11T00:00:00.000Z"
 forumUrl: "https://www.mavsboard.com"
+heroImage: "../../assets/thumbnails/welcome.jpg"
 ---
 
 Welcome to the MavsBoard Blog — your new home for Dallas Mavericks content straight from the community.

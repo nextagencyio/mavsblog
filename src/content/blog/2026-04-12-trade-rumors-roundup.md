@@ -4,6 +4,7 @@ description: "MavsBoard community discusses potential trades involving Daniel Ga
 pubDate: "2026-04-12T00:03:25.471Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=3856"
 tags: ["trade-rumors"]
+heroImage: "../../assets/thumbnails/2026-04-12-trade-rumors-roundup.jpg"
 ---
 
 

@@ -4,6 +4,7 @@ description: "Dallas Mavericks fans weigh in on the future of Kyrie Irving after
 pubDate: "2026-04-12T00:03:14.521Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=3856"
 tags: ["trade-rumors", "featured"]
+heroImage: "../../assets/thumbnails/2026-04-12-kyrie-future-debate.jpg"
 ---
 
 

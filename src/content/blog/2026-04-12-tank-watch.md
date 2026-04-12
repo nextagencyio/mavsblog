@@ -4,6 +4,7 @@ description: "Dallas Mavericks fans discuss tanking strategy and NBA draft prosp
 pubDate: "2026-04-12T00:03:42.410Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4279"
 tags: ["draft", "tank-watch"]
+heroImage: "../../assets/thumbnails/2026-04-12-tank-watch.jpg"
 ---
 
 
