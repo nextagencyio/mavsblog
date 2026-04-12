@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:27:15.066Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=3856"
 tags: ["trade-rumors", "featured"]
 heroImage: "../../assets/thumbnails/2026-04-12-kyrie-future-debate.jpg"
+ogImage: "/og/2026-04-12-kyrie-future-debate.jpg"
 ---
 
 The Dallas Mavericks' offseason plans have sparked a heated debate among fans, and it's not just about who they'll draft or sign in free agency. The elephant in the room is Kyrie Irving, who's recovering from a torn ACL. Should the Mavs trade him for draft picks or keep him as a veteran leader for Cooper Flagg's development?

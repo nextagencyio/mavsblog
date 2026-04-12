@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:27:27.881Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=3856"
 tags: ["trade-rumors"]
 heroImage: "../../assets/thumbnails/2026-04-12-trade-rumors-roundup.jpg"
+ogImage: "/og/2026-04-12-trade-rumors-roundup.jpg"
 ---
 
 The MavsBoard community is always abuzz with trade rumors, player takes, and team strategy discussions. As a Mavs fan myself, I'm excited to dive into the latest chatter and share some of the most interesting proposals and opinions.

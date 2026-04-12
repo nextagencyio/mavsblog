@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:27:44.170Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4279"
 tags: ["draft", "tank-watch"]
 heroImage: "../../assets/thumbnails/2026-04-12-tank-watch.jpg"
+ogImage: "/og/2026-04-12-tank-watch.jpg"
 ---
 
 Tanking 101: MavsBoard's Guide to the 2026 NBA Draft Lottery

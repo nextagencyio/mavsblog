@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:27:33.683Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=2171"
 tags: ["nba", "analysis"]
 heroImage: "../../assets/thumbnails/2026-04-12-around-the-nba.jpg"
+ogImage: "/og/2026-04-12-around-the-nba.jpg"
 ---
 
 ## MavsBoard Roundup: Lottery Odds, Celtics' Dominance, and LeBron's Legacy

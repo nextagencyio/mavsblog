@@ -227,15 +227,20 @@ async function main() {
       const filePath = await generateImage(artPrompt, filename)
       console.log(`    ✅ Saved: ${path.basename(filePath)}`)
 
+      // Also copy to public/og/ for OG image tags
+      const ogDir = path.join(process.cwd(), 'public', 'og')
+      await fs.mkdir(ogDir, { recursive: true })
+      await fs.copyFile(filePath, path.join(ogDir, filename))
+
       // Update the markdown file to reference the thumbnail
       const mdPath = path.join(CONTENT_DIR, `${post.slug}.md`)
       let content = await fs.readFile(mdPath, 'utf-8')
       content = content.replace(
         /^(---\n(?:.*\n)*?)(---)/m,
-        `$1heroImage: "../../assets/thumbnails/${filename}"\n$2`
+        `$1heroImage: "../../assets/thumbnails/${filename}"\nogImage: "/og/${filename}"\n$2`
       )
       await fs.writeFile(mdPath, content)
-      console.log(`    ✅ Updated frontmatter`)
+      console.log(`    ✅ Updated frontmatter + OG image`)
 
     } catch (err: any) {
       console.error(`    ❌ Error: ${err.message}`)

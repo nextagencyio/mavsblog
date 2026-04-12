@@ -1,0 +1,64 @@
+name: Daily Content Generation
+
+on:
+  schedule:
+    # Run daily at 8am CT (1pm UTC)
+    - cron: '0 13 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Scrape forum data
+        run: npx tsx scripts/generate-posts.ts scrape
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Check for new content
+        id: check
+        run: npx tsx scripts/check-content.ts >> "$GITHUB_OUTPUT"
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Generate one article
+        if: steps.check.outputs.should_generate == 'true'
+        run: npx tsx scripts/daily-article.ts
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Generate thumbnail
+        if: steps.check.outputs.should_generate == 'true'
+        run: npx tsx scripts/generate-thumbnails.ts
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
+
+      - name: Commit and push
+        if: steps.check.outputs.should_generate == 'true'
+        run: |
+          git config user.name "MavsBoard Bot"
+          git config user.email "bot@mavsboard.com"
+          git add -A
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          TITLE=$(grep '^title:' src/content/blog/$(date +%Y-%m-%d)-*.md 2>/dev/null | head -1 | sed 's/.*title: "//;s/"$//')
+          git commit -m "Daily article: ${TITLE:-$(date +%Y-%m-%d)}"
+          git push
+
+      - name: Skip notification
+        if: steps.check.outputs.should_generate == 'false'
+        run: echo "Skipping — not enough recent forum activity"

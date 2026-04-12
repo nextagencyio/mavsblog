@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:28:13.761Z"
 forumUrl: "https://www.mavsboard.com"
 tags: ["weekly-digest", "featured"]
 heroImage: "../../assets/thumbnails/2026-04-12-weekly-digest.jpg"
+ogImage: "/og/2026-04-12-weekly-digest.jpg"
 ---
 
 ## MavsBoard Weekly Roundup: Mavs Fans Go Wild for Presti, Tanking, and Three-Pointers

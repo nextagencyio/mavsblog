@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:27:55.756Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4218"
 tags: ["game-recap"]
 heroImage: "../../assets/thumbnails/2026-04-12-game-recaps-3.jpg"
+ogImage: "/og/2026-04-12-game-recaps-3.jpg"
 ---
 
 The Dallas Mavericks just wrapped up a tough back-to-back road trip, facing off against the Orlando Magic and Boston Celtics. The Mavs faithful were left feeling frustrated, but there's still plenty to be excited about, especially when it comes to young talent like Cooper Flagg.

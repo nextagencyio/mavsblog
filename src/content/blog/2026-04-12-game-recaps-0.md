@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:27:50.336Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4277"
 tags: ["game-recap"]
 heroImage: "../../assets/thumbnails/2026-04-12-game-recaps-0.jpg"
+ogImage: "/og/2026-04-12-game-recaps-0.jpg"
 ---
 
 The Dallas Mavericks' rebuild year has been a bumpy ride, but there have been some silver linings. Like a teenager learning to drive, Cooper Flagg has had his fair share of turnovers, but he's also shown flashes of brilliance. In the Mavs' recent games, fans got to see both the highs and lows of Flagg's development.

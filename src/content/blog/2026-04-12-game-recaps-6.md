@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:28:02.190Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4207"
 tags: ["game-recap"]
 heroImage: "../../assets/thumbnails/2026-04-12-game-recaps-6.jpg"
+ogImage: "/og/2026-04-12-game-recaps-6.jpg"
 ---
 
 Mavs Blow Lead, But Hold On: A Game 58 Recap

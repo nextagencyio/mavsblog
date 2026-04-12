@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:27:39.046Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4035"
 tags: ["front-office", "featured"]
 heroImage: "../../assets/thumbnails/2026-04-12-next-gm-watch.jpg"
+ogImage: "/og/2026-04-12-next-gm-watch.jpg"
 ---
 
 The Dallas Mavericks are at a crossroads, and fans are eagerly discussing who should take the reins as the next GM or President of Basketball Operations. With the team's recent trades and coaching changes, the stakes are high, and MavsBoard community members are sharing their thoughts on the ideal candidate. Let's dive into the conversation.

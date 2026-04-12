@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:27:08.030Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=2172"
 tags: ["news", "featured"]
 heroImage: "../../assets/thumbnails/2026-04-12-mavs-news-this-week.jpg"
+ogImage: "/og/2026-04-12-mavs-news-this-week.jpg"
 ---
 
 ## Cooper Flagg's Rookie Sensation

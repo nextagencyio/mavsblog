@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:28:07.257Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4244"
 tags: ["fun", "opinion"]
 heroImage: "../../assets/thumbnails/2026-04-12-three-point-dunk-rule.jpg"
+ogImage: "/og/2026-04-12-three-point-dunk-rule.jpg"
 ---
 
 # MavsBoard's Wildest Debate: 3-Point Dunk Rule

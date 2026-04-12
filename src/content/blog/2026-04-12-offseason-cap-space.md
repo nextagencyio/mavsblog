@@ -5,6 +5,7 @@ pubDate: "2026-04-12T01:27:20.972Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=3856"
 tags: ["offseason", "salary-cap"]
 heroImage: "../../assets/thumbnails/2026-04-12-offseason-cap-space.jpg"
+ogImage: "/og/2026-04-12-offseason-cap-space.jpg"
 ---
 
 The Dallas Mavericks are sitting pretty with around $38M in salary cap space, and fans are getting restless with ideas on how to spend it. With the luxury tax looming, MavsBoard users are throwing around proposals that range from savvy to straight-up crazy. Here are the top 5 moves fans are discussing:
