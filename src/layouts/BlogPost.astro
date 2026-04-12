@@ -212,9 +212,26 @@ const jsonLd = {
 	}
 
 	@media (max-width: 768px) {
-		.article-hero { padding: 3rem 0 2rem; min-height: 260px; }
-		.article-hero h1 { font-size: 1.7rem; }
-		.hero-description { font-size: 1rem; }
-		.article-body { padding: 2rem 1.25rem; margin-top: -1rem; border-radius: 8px 8px 0 0; }
+		.article-hero { padding: 2.5rem 0 1.5rem; min-height: 240px; }
+		.article-hero h1 { font-size: 1.5rem; }
+		.hero-description { font-size: 0.95rem; margin-bottom: 1rem; }
+		.hero-meta-top { margin-bottom: 0.5rem; }
+		.article-meta { gap: 0.75rem; }
+		.meta-left { gap: 0.5rem; }
+		.author-avatar { width: 32px; height: 32px; padding: 4px; }
+		.author-name { font-size: 0.85rem; }
+		.meta-date { font-size: 0.8rem; }
+		.forum-link { padding: 0.4rem 0.75rem; font-size: 0.8rem; }
+		.article-body {
+			padding: 1.75rem 1.25rem;
+			margin-top: -1rem;
+			border-radius: 8px 8px 0 0;
+		}
+	}
+	@media (max-width: 480px) {
+		.article-hero { padding: 2rem 0 1.25rem; min-height: 200px; }
+		.article-hero h1 { font-size: 1.3rem; }
+		.hero-description { display: none; }
+		.article-body { padding: 1.5rem 1rem; }
 	}
 </style>

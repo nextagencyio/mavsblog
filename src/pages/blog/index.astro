@@ -77,4 +77,15 @@ const posts = (await getCollection('blog')).sort(
 			grid-template-columns: 1fr;
 		}
 	}
+	@media (max-width: 768px) {
+		main {
+			padding: 1rem 0;
+		}
+		.page-header h1 {
+			font-size: 1.5rem;
+		}
+		.article-feed {
+			gap: 1rem;
+		}
+	}
 </style>

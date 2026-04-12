@@ -117,10 +117,26 @@ const remainingPosts = posts.slice(5);
 		.content-layout {
 			grid-template-columns: 1fr;
 		}
+		.featured-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 	@media (max-width: 768px) {
+		main {
+			padding: 1rem 0;
+		}
+		.hero-section {
+			margin-bottom: 1rem;
+		}
 		.featured-grid {
 			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+		.article-feed {
+			gap: 1rem;
+		}
+		.section-heading {
+			font-size: 1rem;
 		}
 	}
 </style>
