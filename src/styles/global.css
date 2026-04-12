@@ -222,7 +222,8 @@ p { margin: 0 0 1em; }
 	font-weight: 600;
 	transition: all 0.2s;
 }
-.prose hr ~ ul li a:hover {
+.prose hr ~ ul li a:hover,
+.prose hr ~ ul li a:hover strong {
 	background: var(--navy);
 	color: white !important;
 	text-decoration: none;
