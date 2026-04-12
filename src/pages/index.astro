@@ -13,8 +13,8 @@ const posts = (await getCollection('blog'))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const heroPost = posts[0];
-const featuredPosts = posts.slice(1, 4);
-const remainingPosts = posts.slice(4);
+const featuredPosts = posts.slice(1, 5);
+const remainingPosts = posts.slice(5);
 ---
 
 <!doctype html>
@@ -85,14 +85,14 @@ const remainingPosts = posts.slice(4);
 	}
 	.featured-grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		gap: 1.25rem;
 		margin-bottom: 2rem;
 	}
 	.content-layout {
 		display: grid;
-		grid-template-columns: 1fr 320px;
-		gap: 2rem;
+		grid-template-columns: 1fr 340px;
+		gap: 2.5rem;
 		align-items: start;
 	}
 	.article-feed {

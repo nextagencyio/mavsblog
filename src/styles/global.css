@@ -22,7 +22,7 @@
 	--box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.06);
 	--box-shadow-hover: 0 4px 12px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
 	--radius: 8px;
-	--max-width: 1100px;
+	--max-width: 1400px;
 }
 
 * { box-sizing: border-box; }
@@ -72,11 +72,25 @@ p { margin: 0 0 1em; }
 
 /* Article prose */
 .prose {
-	max-width: 720px;
+	max-width: 800px;
 	margin: 0 auto;
 	font-size: 17px;
 	line-height: 1.8;
 	color: rgb(var(--gray-700));
+}
+/* Drop cap on first paragraph */
+.prose > p:first-child::first-letter {
+	float: left;
+	font-size: 3.5em;
+	line-height: 0.8;
+	padding-right: 0.1em;
+	margin-top: 0.05em;
+	font-weight: 800;
+	color: var(--navy);
+}
+.prose > p:first-child {
+	font-size: 1.1em;
+	line-height: 1.7;
 }
 .prose h2 {
 	margin-top: 2em;
@@ -96,30 +110,155 @@ p { margin: 0 0 1em; }
 	color: var(--accent-dark);
 }
 .prose blockquote {
-	border-left: 4px solid var(--blue-light);
-	margin: 1.5em 0;
-	padding: 0.5em 0 0.5em 1.25em;
-	color: rgb(var(--gray-500));
+	position: relative;
+	border: none;
+	border-left: none;
+	margin: 2em 0;
+	padding: 1.5em 1.5em 1.5em 3.5em;
+	background: linear-gradient(135deg, #f0f6ff 0%, #e8f0fe 100%);
+	border-radius: var(--radius);
+	color: rgb(var(--gray-700));
 	font-style: italic;
+	font-size: 1.05em;
+	line-height: 1.7;
+	box-shadow: inset 4px 0 0 var(--blue);
+}
+.prose blockquote::before {
+	content: '\201C';
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	font-size: 3em;
+	line-height: 1;
+	color: var(--blue);
+	opacity: 0.35;
+	font-family: Georgia, serif;
+}
+.prose blockquote p {
+	margin-bottom: 0.5em;
+}
+.prose blockquote p:last-child {
+	margin-bottom: 0;
 }
 .prose ul, .prose ol {
 	padding-left: 1.5em;
 	margin-bottom: 1.5em;
 }
 .prose li {
-	margin-bottom: 0.4em;
+	margin-bottom: 0.5em;
 }
 .prose hr {
 	border: none;
-	border-top: 1px solid var(--border);
-	margin: 2em 0;
+	border-top: 2px solid var(--border);
+	margin: 2.5em 0;
 }
 .prose strong {
 	color: var(--text);
+	font-weight: 700;
 }
 .prose img {
 	border-radius: var(--radius);
 	margin: 1.5em 0;
+}
+
+/* Styled inline quotes — when AI wraps quotes in "..." */
+.prose p > strong > a {
+	color: var(--blue);
+	font-weight: 700;
+	text-decoration: none;
+	border-bottom: 2px solid rgba(0, 83, 188, 0.2);
+	transition: border-color 0.2s;
+}
+.prose p > strong > a:hover {
+	border-bottom-color: var(--blue);
+	text-decoration: none;
+}
+
+/* Community Contributors section */
+.prose h2:has(+ p + ul a[href*="mavsboard.com/member"]),
+.prose h2 + p + ul a[href*="mavsboard.com/member"] {
+	color: var(--blue);
+}
+
+/* Contributors list styling */
+.prose h2 ~ ul li a[href*="member.php"] {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+/* Make the Community Contributors and Source Posts sections stand out */
+.prose hr + h2 {
+	font-size: 1.15em;
+	color: var(--navy);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid var(--blue-light);
+	margin-top: 0.5em;
+}
+
+/* Style the contributor list as a grid of cards */
+.prose hr ~ ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+.prose hr ~ ul li {
+	margin: 0;
+}
+.prose hr ~ ul li a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	padding: 0.4rem 0.85rem;
+	background: rgb(var(--gray-100));
+	border-radius: 20px;
+	font-size: 0.88rem;
+	color: var(--navy);
+	text-decoration: none;
+	border-bottom: none;
+	font-weight: 600;
+	transition: background 0.2s, color 0.2s;
+}
+.prose hr ~ ul li a:hover {
+	background: var(--navy);
+	color: white;
+	text-decoration: none;
+}
+
+/* Source posts section — style as a card */
+.prose hr ~ h2 ~ h2 + ul,
+.prose ul:has(a[href*="showthread"]:first-child) {
+	background: rgb(var(--gray-100));
+	border-radius: var(--radius);
+	padding: 1rem 1.25rem;
+	display: block;
+}
+.prose ul:has(a[href*="showthread"]) li {
+	margin-bottom: 0.75rem;
+	line-height: 1.5;
+}
+.prose ul:has(a[href*="showthread"]) li:last-child {
+	margin-bottom: 0;
+}
+
+/* Bottom CTA styling */
+.prose > p:last-child {
+	background: linear-gradient(135deg, #00285E, #0053BC);
+	color: white;
+	padding: 1.25rem 1.5rem;
+	border-radius: var(--radius);
+	font-style: italic;
+	margin-top: 2em;
+}
+.prose > p:last-child a {
+	color: #7ec8f0;
+	font-weight: 600;
+}
+.prose > p:last-child a:hover {
+	color: white;
 }
 
 /* Category badges */
