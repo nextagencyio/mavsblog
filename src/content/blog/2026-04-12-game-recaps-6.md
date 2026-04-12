@@ -1,6 +1,6 @@
 ---
 title: "Mavs Fall to Kings: Max Christie Heats Up But Dallas Comes Up Short"
-description: "MavsBoard community discusses Mavericks basketball"
+description: "Max Christie catches fire but the Mavs fall short against Sacramento. MavsBoard fans react."
 pubDate: "2026-04-12T01:28:02.190Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4207"
 tags: ["game-recap"]

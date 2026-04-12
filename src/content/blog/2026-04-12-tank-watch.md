@@ -1,6 +1,6 @@
 ---
 title: "Tank Watch FAQ: Everything Mavs Fans Need to Know About the Tank"
-description: "MavsBoard community discusses Mavericks basketball"
+description: "The Mavs are 24-52 and fans are crunching lottery odds, debating prospects, and cheering for losses."
 pubDate: "2026-04-12T01:27:44.170Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4279"
 tags: ["draft", "tank-watch"]

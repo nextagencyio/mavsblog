@@ -1,6 +1,6 @@
 ---
 title: "Mavs Madness: Flagg's Historic Rookie Season and Offseason Buzz"
-description: "Dallas Mavericks news roundup: Cooper Flagg's impressive rookie year, Max Kleber's shooting streak, and fan reactions to the team's rebuild and potential offseason moves."
+description: "Cooper Flagg drops 51, the Mavs hunt for a new GM, and the rebuild gets real. MavsBoard fans react."
 pubDate: "2026-04-12T01:27:08.030Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=2172"
 tags: ["news", "featured"]

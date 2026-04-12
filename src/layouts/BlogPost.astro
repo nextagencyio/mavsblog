@@ -12,11 +12,37 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage, forumUrl, tags = [] } = Astro.props;
 const displayTag = tags?.find(t => t !== 'featured') || tags?.[0];
 const readTime = Math.max(3, Math.ceil(800 / 200));
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Article',
+	headline: title,
+	description: description,
+	datePublished: pubDate.toISOString(),
+	...(updatedDate && { dateModified: updatedDate.toISOString() }),
+	author: {
+		'@type': 'Organization',
+		name: 'MavsBoard Community',
+		url: 'https://www.mavsboard.com',
+	},
+	publisher: {
+		'@type': 'Organization',
+		name: 'MavsBoard Blog',
+		url: 'https://blog.mavsboard.com',
+		logo: {
+			'@type': 'ImageObject',
+			url: 'https://blog.mavsboard.com/images/mavsboard-logo.png',
+		},
+	},
+	mainEntityOfPage: canonicalURL.toString(),
+};
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={`${title} — MavsBoard Blog`} description={description} />
+		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 	</head>
 	<body>
 		<Header />
