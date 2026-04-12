@@ -72,66 +72,75 @@ p { margin: 0 0 1em; }
 
 /* Article prose */
 .prose {
-	max-width: 800px;
+	max-width: 100%;
 	margin: 0 auto;
 	font-size: 17px;
-	line-height: 1.8;
+	line-height: 1.85;
 	color: rgb(var(--gray-700));
 }
 /* Drop cap on first paragraph */
 .prose > p:first-child::first-letter {
 	float: left;
-	font-size: 3.5em;
-	line-height: 0.8;
-	padding-right: 0.1em;
+	font-size: 3.8em;
+	line-height: 0.75;
+	padding-right: 0.12em;
 	margin-top: 0.05em;
 	font-weight: 800;
 	color: var(--navy);
+	font-family: Georgia, 'Times New Roman', serif;
 }
 .prose > p:first-child {
-	font-size: 1.1em;
-	line-height: 1.7;
+	font-size: 1.15em;
+	line-height: 1.75;
+	color: var(--text);
 }
 .prose h2 {
-	margin-top: 2em;
-	margin-bottom: 0.5em;
-	color: var(--text);
+	margin-top: 2.5em;
+	margin-bottom: 0.6em;
+	color: var(--navy);
+	font-size: 1.4em;
+	padding-bottom: 0.4em;
+	border-bottom: 2px solid rgb(var(--gray-200));
 }
 .prose h3 {
 	margin-top: 1.5em;
 	margin-bottom: 0.5em;
+	color: var(--text);
 }
 .prose a {
 	color: var(--blue);
-	text-decoration: underline;
-	text-underline-offset: 2px;
+	text-decoration: none;
+	border-bottom: 2px solid rgba(0, 83, 188, 0.2);
+	transition: border-color 0.2s, color 0.2s;
 }
 .prose a:hover {
 	color: var(--accent-dark);
+	border-bottom-color: var(--accent-dark);
+	text-decoration: none;
 }
+/* Blockquotes — styled as pull quotes */
 .prose blockquote {
 	position: relative;
 	border: none;
-	border-left: none;
-	margin: 2em 0;
-	padding: 1.5em 1.5em 1.5em 3.5em;
+	margin: 2em -1em;
+	padding: 1.75em 2em 1.75em 4em;
 	background: linear-gradient(135deg, #f0f6ff 0%, #e8f0fe 100%);
-	border-radius: var(--radius);
+	border-radius: 12px;
 	color: rgb(var(--gray-700));
 	font-style: italic;
-	font-size: 1.05em;
+	font-size: 1.1em;
 	line-height: 1.7;
-	box-shadow: inset 4px 0 0 var(--blue);
+	box-shadow: inset 5px 0 0 var(--blue), 0 2px 8px rgba(0,0,0,0.04);
 }
 .prose blockquote::before {
 	content: '\201C';
 	position: absolute;
-	top: 10px;
-	left: 12px;
-	font-size: 3em;
+	top: 12px;
+	left: 14px;
+	font-size: 3.5em;
 	line-height: 1;
 	color: var(--blue);
-	opacity: 0.35;
+	opacity: 0.3;
 	font-family: Georgia, serif;
 }
 .prose blockquote p {
@@ -188,16 +197,16 @@ p { margin: 0 0 1em; }
 
 /* Make the Community Contributors and Source Posts sections stand out */
 .prose hr + h2 {
-	font-size: 1.15em;
+	font-size: 1em;
 	color: var(--navy);
 	text-transform: uppercase;
-	letter-spacing: 0.5px;
+	letter-spacing: 1px;
 	padding-bottom: 0.5rem;
 	border-bottom: 2px solid var(--blue-light);
 	margin-top: 0.5em;
 }
 
-/* Style the contributor list as a grid of cards */
+/* Style the contributor list as a grid of pills */
 .prose hr ~ ul {
 	list-style: none;
 	padding: 0;
@@ -212,53 +221,67 @@ p { margin: 0 0 1em; }
 	display: inline-flex;
 	align-items: center;
 	gap: 0.4rem;
-	padding: 0.4rem 0.85rem;
-	background: rgb(var(--gray-100));
-	border-radius: 20px;
-	font-size: 0.88rem;
+	padding: 0.5rem 1rem;
+	background: linear-gradient(135deg, rgb(var(--gray-100)), #e8f0fe);
+	border-radius: 24px;
+	font-size: 0.85rem;
 	color: var(--navy);
 	text-decoration: none;
-	border-bottom: none;
+	border: 1px solid rgb(var(--gray-200));
+	border-bottom: 1px solid rgb(var(--gray-200));
 	font-weight: 600;
-	transition: background 0.2s, color 0.2s;
+	transition: all 0.2s;
 }
 .prose hr ~ ul li a:hover {
 	background: var(--navy);
 	color: white;
+	border-color: var(--navy);
 	text-decoration: none;
+	transform: translateY(-1px);
+	box-shadow: 0 2px 8px rgba(0,40,94,0.2);
 }
 
-/* Source posts section — style as a card */
-.prose hr ~ h2 ~ h2 + ul,
-.prose ul:has(a[href*="showthread"]:first-child) {
+/* Source posts section — styled card */
+.prose ul:has(a[href*="showthread"]) {
 	background: rgb(var(--gray-100));
-	border-radius: var(--radius);
-	padding: 1rem 1.25rem;
+	border-radius: 12px;
+	padding: 1.25rem 1.5rem;
 	display: block;
+	border: 1px solid rgb(var(--gray-200));
+	list-style: none;
 }
 .prose ul:has(a[href*="showthread"]) li {
 	margin-bottom: 0.75rem;
 	line-height: 1.5;
+	padding-left: 0;
 }
 .prose ul:has(a[href*="showthread"]) li:last-child {
 	margin-bottom: 0;
 }
+.prose ul:has(a[href*="showthread"]) a {
+	border-bottom: none;
+}
 
-/* Bottom CTA styling */
-.prose > p:last-child {
+/* Bottom CTA — bold banner */
+.prose > p:last-child em {
+	display: block;
 	background: linear-gradient(135deg, #00285E, #0053BC);
 	color: white;
-	padding: 1.25rem 1.5rem;
-	border-radius: var(--radius);
-	font-style: italic;
-	margin-top: 2em;
+	padding: 1.5rem 2rem;
+	border-radius: 12px;
+	font-style: normal;
+	font-size: 0.95em;
+	line-height: 1.6;
+	box-shadow: 0 4px 12px rgba(0,40,94,0.15);
 }
-.prose > p:last-child a {
+.prose > p:last-child em a {
 	color: #7ec8f0;
 	font-weight: 600;
+	border-bottom-color: rgba(126,200,240,0.3);
 }
-.prose > p:last-child a:hover {
+.prose > p:last-child em a:hover {
 	color: white;
+	border-bottom-color: white;
 }
 
 /* Category badges */
