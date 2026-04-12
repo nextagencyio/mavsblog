@@ -1,52 +1,60 @@
 ---
-title: "Tank Watch: Mavs Fans Master the Art of Losing"
+title: "Tank Watch FAQ: Everything Mavs Fans Need to Know About the Tank"
 description: "MavsBoard community discusses Mavericks basketball"
-pubDate: "2026-04-12T01:17:38.317Z"
+pubDate: "2026-04-12T01:27:44.170Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=4279"
 tags: ["draft", "tank-watch"]
 heroImage: "../../assets/thumbnails/2026-04-12-tank-watch.jpg"
 ---
 
-TANK WATCH TUESDAY: Mavs Fans Debate Pros and Cons of Lottery Positioning
-The Dallas Mavericks are tanking, and Mavs fans are divided on whether to embrace the process or crave competitive basketball.
+Tanking 101: MavsBoard's Guide to the 2026 NBA Draft Lottery
+--------------------------------------------------------
 
-The Mavs' 24-52 record has them positioning for a high pick in the 2026 NBA Draft lottery. Fans are obsessing over the odds, with some urging the team to tank for a top pick and others hoping for a competitive finish to the season. 
+The Mavs' 24-52 record isn't exactly a badge of honor, but it's a strategic play for the 2026 NBA Draft. As the season winds down, MavsBoard is buzzing with debates on tanking, draft odds, and which prospects to covet.
 
-> "The lottery odds between the two tied teams are split (take the ping pong balls for both and split them equally). The coin flip establishes the order if neither of the tied teams moves up." - [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72)
+## Q: What's the deal with our lottery odds?
 
-[Mav's Board regular DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) crunched the numbers, laying out the Mavs' chances of landing a top pick. A 37.2% chance of snagging a top-four pick is nothing to sneeze at, but it's a far cry from guaranteeing a franchise-altering talent.
+The Mavs are currently tied with the Memphis Grizzlies, and their lottery odds are a hot topic. [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) broke down the numbers:
 
-Some fans, like [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482), are skeptical of the tanking strategy. 
-> "Are these right? They look different than what is on tankathon. The top 4 looks right, but the rest looks wrong."
+> "The lottery odds between the two tied teams are split (take the ping pong balls for both and split them equally). The coin flip establishes the order if neither of the tied teams moves up."
 
-[Mav's Board regular mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) isn't the only one questioning the team's approach. Others want to see the team compete, even if it means a lower draft pick.
+## Q: Should we tank the last game?
 
-> "If the lottery is fixed in any way, the Mavs will move up. But if they win the Chicago game and don't move up, I'm not going to care much about the draft when it's about seven deep and tied for seventh doesn't provide much opportunity for seven." - [Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97)
+Some fans, like [Dirknows](https://www.mavsboard.com/member.php?action=profile&uid=732), think the Mavs should prioritize winning:
 
-[Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97) isn't buying the tanking strategy, and he's not alone. The Mavs' recent performance has been...underwhelming. 
-> "Cooper got his 33 in a loss, so that’s a positive. This Bulls game is gonna be a brutal product on the court." - [Dirknows](https://www.mavsboard.com/member.php?action=profile&uid=732)
+> "Cooper got his 33 in a loss, so that’s a positive. This Bulls game is gonna be a brutal product on the court."
 
-But [Dirknows](https://www.mavsboard.com/member.php?action=profile&uid=732) still sees positives, like Cooper's growth. And what about the prospects on the horizon?
+But others, like [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23), advocate for resting starters:
 
-Fans are eyeing talents like LaMelo Ball, Mark Williams, and Paolo Banchero. The Mavs' brass will have to weigh the benefits of tanking against the costs of a long season.
+> "Apparently Coop is now on the injury report. If I was Kidd, I'd sit the starters (send them on to DAL even), play #10-15 off the bench, add in the 2-ways and sign on a couple of 10 days to play against SAN."
 
-> "Memphis vs Utah may be the game of the year tonight. Memphis is pulling out all the stops by resting almost the whole team. Memphis is tied with Dallas and one game in front of New Orleans." - [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404)
+## Q: Who are we rooting for in the tanking wars?
 
-The Mavs aren't the only ones tanking; the Grizzlies and Jazz are in a battle of their own. It's a delicate balance between losing and looking like you're trying to lose.
+The Utah Jazz and Memphis Grizzlies are in a tanking showdown, with the Grizzlies resting almost their entire team. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) on the implications:
 
-The Mavs' final game is Sunday, and fans are on edge. Will they tank their way to a top pick, or will they surprise with a win?
+> "Memphis vs Utah may be the game of the year tonight. Memphis is pulling out all the stops by resting almost the whole team. Memphis is tied with Dallas and one game in front of New Orleans."
 
-> "If both us and Memphis lose out the get Lower spot?" - [Deebo](https://www.mavsboard.com/member.php?action=profile&uid=2658)
+## Q: What are our chances of landing a top pick?
 
-The debate rages on. One thing's for sure: Mavs fans will be on the edge of their seats Sunday, willing their team to...well, maybe not win, but at least put up a good fight.
+[DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) crunched the numbers:
 
-And who knows? Maybe the Mavs will pull off a miracle and snag a top pick. A fan can dream, right?
+> "Top 4 Pick: 37.2% (6th Worst), 34.6% (Tie 6/7), 31.9% (7th Worst), 29.8% (Tie 7/8)"
 
-The Mavs' tanking strategy has sparked a heated debate among fans. Will they find a way to balance short-term competitiveness with long-term success? Only time will tell. 
+## Q: Which prospects are we eyeing?
 
-One thing's certain: Mavs fans will be watching the lottery with bated breath. 
+The conversation didn't explicitly mention specific prospects, but fans are undoubtedly excited about the potential for a top pick. [Dirknows](https://www.mavsboard.com/member.php?action=profile&uid=732) jokingly predicted:
 
-Will the Mavs land a franchise-altering talent, or will they slide into mediocrity? The suspense is killing us.
+> "Top-4 pick incoming."
+
+## Q: Is the lottery rigged?
+
+[RasheedsBigWhiteSpot](https://www.mavsboard.com/member.php?action=profile&uid=171) poked fun at the idea:
+
+> "Now let's lose on Sunday and start practicing our coin flips!"
+
+The debate rages on, but one thing's for sure – Mavs fans are eager to see their team rise to the top, whether through tanking or competitive basketball. As [Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97) said:
+
+> "May it be so re: moving up. And by the way, I absolutely agree that if the lottery is fixed in any way, the Mavs will move up."
 
 ---
 

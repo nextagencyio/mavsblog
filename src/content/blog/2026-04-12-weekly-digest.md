@@ -1,43 +1,75 @@
 ---
-title: "MavsBoard Weekly Roundup: Presti Watch, Tank Mode, and Three-Point Dunks"
-description: "Catch up on the hottest Mavs discussions: Next GM, tanking, and a potential new rule"
-pubDate: "2026-04-12T01:18:08.269Z"
+title: "MavsBoard Weekly: Presti Rumors, Tank Drama, and Three-Point Dunks"
+description: "Mavs fans debate the next GM, tanking, and player performances as the season winds down."
+pubDate: "2026-04-12T01:28:13.761Z"
 forumUrl: "https://www.mavsboard.com"
 tags: ["weekly-digest", "featured"]
 heroImage: "../../assets/thumbnails/2026-04-12-weekly-digest.jpg"
 ---
 
-The MavsBoard community has been buzzing this week, and we're here to give you the lowdown. **F Gump** [https://www.mavsboard.com/member.php?action=profile&uid=412] kicked off the discussion by sharing a Dallas Morning News article that had Mavs fans excited: 
+## MavsBoard Weekly Roundup: Mavs Fans Go Wild for Presti, Tanking, and Three-Pointers
+
+## Next GM Watch
+The search for the next Mavericks GM is heating up, and fans are excitedly weighing in on potential candidates. [F Gump](https://www.mavsboard.com/member.php?action=profile&uid=412) kicked off the discussion by pointing out that the Dallas Morning News is now on the same page as him regarding the team's needs:
 
 > "For those who have wanted to laugh at my idea of Presti as the new guy in charge, the DMN is jumping on my bandwagon. They didn't mention Presti alone, but he was the 2nd name on their short list. And their article takes the very same approach I believe in - ending with the same type of people in mind - that the Mavs need an EXPERT, they have an owner with incredibly deep pockets, and he needs to hire the best. PERIOD."
 
-Looks like **F Gump** was ahead of the curve on the Billy Presti hype train. Who knows if he'll be the next GM, but it's clear Mavs fans are thirsty for change. [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) wasn't about to let **F Gump** take all the credit, jokingly correcting him: 
+[Cow](https://www.mavsboard.com/member.php?action=profile&uid=92) was quick to poke fun at [F Gump](https://www.mavsboard.com/member.php?action=profile&uid=412), jokingly asking if he meant "our idea." Meanwhile, [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) thinks the Mavs might be heading in a different direction:
 
-> "Don't you mean, 'our idea'?"
+> "Man, Dallas will need to move fast when the season ends. I just get the feeling that Ricardi and Finley will stay in similar roles, and the new guy brought in is the President of operations role and not a true GM. Ricardi and Finley will report to him. Some teams have set up like this."
 
-Meanwhile, **Chicagojk** [https://www.mavsboard.com/member.php?action=profile&uid=404] had a more nuanced take on the situation: 
+## AROUND the NBA:
+The rest of the league is buzzing with excitement, and Mavs fans are keeping tabs on their competitors. [HoosierDaddyKid](https://www.mavsboard.com/member.php?action=profile&uid=159) shared some impressive stats from around the league:
 
-> "Man, Dallas will need to move fast when the season ends. I just get the feeling that Ricardi and Finley will stay in similar roles, and the new guy brought in is the President of operations role and not a true GM. Ricardi and Finley will report to him. Some teams have set up like this. That person will have a lot of leadway with Dumont not interfering, but also not be the person handling the day to day scouting."
+> "LBJ becomes the first non-point guard to reach 12,000 assists."
+> 
+> "Jaylen Brown is on track to finish 5th in MVP voting."
+> 
+> "The first game in NBA history that 3 different players had a triple-double in the same game."
 
-**DanSchwartzgan** [https://www.mavsboard.com/member.php?action=profile&uid=72] chimed in, pointing out the potential pitfalls of keeping current staff: 
-
-> "This is probably the most likely outcome. Dumont has been willing to spend on upper tier leadership. But, you never want to tie the hands of the top guy and say you have to retain these guys that are already here. That's a surefire way to run off the very best out there who will have their own relationships they prefer."
-
-The Mavs' season may be winding down, but there's still plenty of action to discuss. **HoosierDaddyKid** [https://www.mavsboard.com/member.php?action=profile&uid=159] shared some fun NBA tidbits, including LeBron James becoming the first non-point guard to reach 12,000 assists. 
-
-The Mavs' own season has been... eventful. They face the Orlando Magic tonight, and **Chicagojk** [https://www.mavsboard.com/member.php?action=profile&uid=404] was highlighting Max Kleber's impressive three-point shooting: 
+## MAVS NEWS:
+As the season winds down, Mavs fans are focusing on the team's performances and potential changes. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) highlighted Max's impressive three-point shooting:
 
 > "Per Locked On Mavs, Max averages 7 threes attempts per game. If he does that the next two games, he needs to make at least 6 out of 14 to finish the year over 40% from three. He is currently exactly at 40% for the season."
 
-As the Mavs continue to tank (sorry, not sorry), **Chicagojk** had some thoughts on Max's defensive game: 
+## Trade & FA 2025-26: Free Agency Starts 5pm CST/6pm EST
+The Mavs are expected to make some big moves in the offseason, and fans are eager to speculate. [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) brought up an interesting point about Isaac's potential return:
 
-> "I agree, he should a better defender. He has some Josh Green Disease. He looks the part and tries hard but so far he has had little real impact. To be fair he hasn't played much with an elite rim defender. The defense as a whole has been pretty iffy with all the roster changes and injuries."
+> "Issac still thinks there is a chance. He called the AD salary dump."
 
-One more thing: have you heard about the proposed 3-Point Dunk rule? Because we have thoughts. This week, the NBA might actually make a rule change that could shift the game forever.
+## Game 77: Dallas Mavericks (24-52) vs. Orlando Magic (40-36) | 7:30 PM CST
+The Mavs are set to face off against the Orlando Magic, and fans are gearing up for what promises to be an exciting game.
 
-The MavsBoard community is buzzing, and we've got our eyes on the prize. Will the Mavs land a top pick in the draft? Will they make a splash in free agency? One thing's for sure: we'll be here, keeping it real, keeping it fun, and keeping it Mavs. 
+## Tank watch for the last ten days of the season
+As the season enters its final stretch, Mavs fans are keeping a close eye on the team's tanking efforts. Some fans are excited about the potential for a high draft pick, while others are more concerned about the team's immediate future.
 
-And on a final note, if you're still reading, you must be a true Mavs fan. So here's a question: are you ready for a 3-Point Dunk rule? Because we are not. Not ready. At all.
+## Game 76: Dallas Mavericks (24-51) @ Milwaukee Bucks (29-45) | 7:00 CST
+The Mavs recently faced off against the Milwaukee Bucks, and fans had some thoughts on the game. 
+
+## New rule: the 3 Point Dunk?
+The NBA is always evolving, and Mavs fans are discussing potential rule changes. 
+
+## Game 72: Dallas Mavericks (23-48) vs GS Warriors (33-38) | 8:30 CST | Peacock & NBCSN
+The Mavs recently faced off against the Golden State Warriors, and fans had some thoughts on the game. [Scott41theMavs](https://www.mavsboard.com/member.php?action=profile&uid=97) weighed in on the team's draft position:
+
+> "I'd be fine with that if it was because the Mavs moved up, but I certainly have no animus against Carlisle and the Pacers."
+
+## Game 67: Dallas Mavericks (22-44) vs Cleveland Cavs  (40-26) | 6:30 CST | Prime Video
+The Mavs recently faced off against the Cleveland Cavs, and fans had some thoughts on the game.
+
+## Game 63: Dallas Mavericks (21-41) @ Boston Celtics (41-21) | 6:00pm CST
+The Mavs recently faced off against the Boston Celtics, and fans had some thoughts on the game.
+
+## Game 62: Dallas Mavericks (21-40) @ Orlando Magic (32-28) | 6:00pm CST
+The Mavs recently faced off against the Orlando Magic, and fans had some thoughts on the game.
+
+## Game 59: Dallas Mavericks (21-37) vs. Memphis Grizzlies (21-36) | 7:30pm CST
+The Mavs recently faced off against the Memphis Grizzlies, and fans had some thoughts on the game.
+
+## Game 58: Sacto at Dallas
+The Mavs recently faced off against the Sacramento Kings, and fans had some thoughts on the game.
+
+As the season comes to a close, Mavs fans are eagerly anticipating the offseason and what it might bring. Will the team land a new GM, or make some big trades? Only time will tell.
 
 ---
 

@@ -1,48 +1,40 @@
 ---
-title: "MavsBoard Fans Go Wild: Salary Cap Shenanigans and 2026 Offseason Dreams"
-description: "Mavs fans debate trades, free agency, and the team's salary cap situation"
-pubDate: "2026-04-12T01:17:15.346Z"
+title: "MavsBoard's Wild Ride: 5 Moves Fans Are Proposing for 2026 Offseason"
+description: "Mavs fans are going wild analyzing the team's $38M salary cap space and proposing crazy moves for the 2026 offseason."
+pubDate: "2026-04-12T01:27:20.972Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=3856"
 tags: ["offseason", "salary-cap"]
 heroImage: "../../assets/thumbnails/2026-04-12-offseason-cap-space.jpg"
 ---
 
-The Dallas Mavericks are sitting pretty, about $38M below the luxury tax. But MavsBoard fans aren't just celebrating - they're scheming. What moves should the team make in the 2026 offseason? Let's dive into the discussion.
+The Dallas Mavericks are sitting pretty with around $38M in salary cap space, and fans are getting restless with ideas on how to spend it. With the luxury tax looming, MavsBoard users are throwing around proposals that range from savvy to straight-up crazy. Here are the top 5 moves fans are discussing:
 
-[Mav fans are a creative bunch](https://www.mavsboard.com/member.php?action=profile&uid=72), and [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) kicked off the conversation with a crucial point: 
-> "A team with Lively on the roster has to have an entire center rotation solution for the games he will miss."
+## 1. Trading for a 3&D Wing
+> "I would want to target a 3&D player with that trade. Kispert is not a plus defender. I would prefer to overpay a little bit (from a cap perspective) to get a high level 3&D player." - [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482)
 
-[Lively's injury history](https://www.mavsboard.com/member.php?action=profile&uid=412) has fans nervous. [F Gump](https://www.mavsboard.com/member.php?action=profile&uid=412) isn't convinced Lively will be a reliable starter:
-> "I like the 'idea' of Lively, but I don't see that as something to depend on... He's an injured player, who has had a significant issue and surgery, and will not even try to play until October."
+Fans are itching to trade for a wing who can shoot and defend. [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) suggests overpaying for a top-tier 3&D player, and one potential target is Corey Kispert. However, some fans are skeptical about Kispert's defensive abilities, and [loki](https://www.mavsboard.com/member.php?action=profile&uid=390) proposes a different route: trading for Kispert to get a better-fitting piece on a good contract.
 
-So, what's the plan at center? [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72) thinks [Gafford's contract](https://www.mavsboard.com/member.php?action=profile&uid=412) was designed to be tradeable:
-> "The decision has to be made IN THE SUMMER... and there will be NO CLUE on what Lively will offer next season."
+## 2. Signing Peyton Watson via Sign-and-Trade
+> "My primary target in free agency would be Peyton Watson (S&T). It's unlikely they can pull the deal off, but I think he could fill that 3&D role long term." - [loki](https://www.mavsboard.com/member.php?action=profile&uid=390)
 
-Some fans are proposing trades. [Loki](https://www.mavsboard.com/member.php?action=profile&uid=390) suggests swapping [Gafford](https://www.mavsboard.com/member.php?action=profile&uid=412) for [Corey Kispert](https://www.mavsboard.com/member.php?action=profile&uid=482):
-> "Gafford to Atlanta for Corey Kispert. That gives you a much better shooting SF next to Flagg on a sub-MLE contract for the next 3 years."
+Restricted free agent Peyton Watson has caught the eyes of Mavs fans. [loki](https://www.mavsboard.com/member.php?action=profile&uid=390) thinks Watson could be the perfect fit, but acknowledges it's unlikely to happen. The Mavs would need to get creative with a sign-and-trade deal, possibly involving draft capital or other players.
 
-[Kispert's a solid player](https://www.mavsboard.com/member.php?action=profile&uid=482), but [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) wants a 3&D specialist:
-> "I would prefer to overpay a little bit (from a cap perspective) to get a high level 3&D player."
+## 3. Dealing Daniel Gafford for Draft Picks or a Better Center
+> "I am very hesitant to trade Gaff and end up without a starter-caliber C." - [F Gump](https://https://www.mavsboard.com/member.php?action=profile&uid=412)
 
-[F Gump](https://www.mavsboard.com/member.php?action=profile&uid=412) isn't sold on [Ivey](https://www.mavsboard.com/member.php?action=profile&uid=390):
-> "Ivey? If he's more than MLE, for me it's an instant hard pass... He's not a PG, he's undersized as a 2-guard, his shooting is not special, and his defense is meh."
+Daniel Gafford's contract is tradeable, and some fans are considering moving him for draft picks or a more reliable center. [F Gump](https://www.mavsboard.com/member.php?action=profile&uid=412) is hesitant to trade Gafford, citing concerns about the team's center rotation. Others, like [DanSchwartzgan](https://www.mavsboard.com/member.php?action=profile&uid=72), think Gafford's contract is designed to be tradeable and that the Mavs need to prioritize finding a center rotation solution.
 
-Free agency is also on the table. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) suggests looking for diamonds in the rough:
-> "You can make the argument that instead of signing an established guy for the MLE that you look for that diamond in the rough who hasn't hit yet."
+## 4. Targeting a Diamond in the Rough
+> "You can make the argument that instead of signing an established guy for the MLE that you look for that diamond in the rough who hasn't hit yet." - [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404)
 
-[Peyton Watson](https://www.mavsboard.com/member.php?action=profile&uid=390) is a popular target:
-> "My primary target in free agency would be Peyton Watson (S&T)... He's a 3&D guy long term."
+Some fans are suggesting the Mavs take a chance on an under-the-radar free agent instead of signing an established player to the mid-level exception. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) thinks this could be a smart move, but acknowledges there's more risk involved.
 
-The [Mavs' salary cap situation](https://www.mavsboard.com/member.php?action=profile&uid=352) is a big factor. [DallasMaverick](https://www.mavsboard.com/member.php?action=profile&uid=352) wonders:
-> "Can we provide a competitive offer to OKC? And what will Dort want in a new contract?"
+## 5. Exploring the Trade Market for a High-Impact Player
+> "Moody is a significantly better defender than Max, and with a 7' 1" wingspan he can easily guard up." - [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482)
 
-[Mavs fans are dreaming big](https://www.mavsboard.com/member.php?action=profile&uid=23). [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23) proposes a wild trade:
-> "How much of a pipe dream would it be to take on Dort and get a FRP for helping OKC out?"
+The Mavs have the assets to make a big trade, and some fans are proposing deals that could bring in a high-impact player. [mvossman](https://www.mavsboard.com/member.php?action=profile&uid=482) compares Moody to Maxi Kleber, suggesting that Moody's defensive abilities could be a game-changer.
 
-One thing's for sure: Mavs fans are excited about the possibilities. As [loki](https://www.mavsboard.com/member.php?action=profile&uid=390) says:
-> "Sub Peyton Watson for Buzelis and you might be able to pull that lineup off."
-
-The 2026 offseason is shaping up to be a wild ride. Buckle up, Mavs fans!
+As the 2026 offseason approaches, Mavs fans are eager to see what moves the team will make. Will they take a chance on a young player or sign a veteran to fill a need? One thing's for sure: it's going to be a wild ride.
 
 ---
 

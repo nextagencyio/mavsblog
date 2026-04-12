@@ -38,6 +38,7 @@ interface ArticlePlan {
   id: string
   headline: string
   prompt: string
+  format: 'listicle' | 'narrative' | 'roundup' | 'hot-takes' | 'point-counterpoint' | 'faq' | 'auto'
   posts: ScrapedPost[]
   forumUrl: string
   tags: string[]
@@ -121,7 +122,8 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
       plans.push({
         id: 'mavs-news-this-week',
         headline: '',
-        prompt: `Write a Mavs news roundup article covering the latest Dallas Mavericks news and fan reactions from this week. The Mavs are in a rebuild year (24-52 record), Cooper Flagg is having a historic rookie season, and the team is positioning for the 2026 NBA Draft lottery.`,
+        format: 'roundup',
+        prompt: `Write a Mavs news roundup covering the latest Dallas Mavericks news and fan reactions from this week. The Mavs are in a rebuild year (24-52 record), Cooper Flagg is having a historic rookie season, and the team is positioning for the 2026 NBA Draft lottery.`,
         posts: chunk1,
         forumUrl: mavsNews.url,
         tags: ['news', 'featured'],
@@ -131,6 +133,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
       plans.push({
         id: 'mavs-news-late-march',
         headline: '',
+        format: 'roundup',
         prompt: `Write a Mavs news roundup covering late March / early April Dallas Mavericks news and fan reactions. Cover trade deadline aftermath, injury updates, and roster moves.`,
         posts: chunk2,
         forumUrl: mavsNews.url,
@@ -141,6 +144,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
       plans.push({
         id: 'mavs-news-mid-march',
         headline: '',
+        format: 'roundup',
         prompt: `Write a Mavs news roundup covering mid-March Dallas Mavericks news and fan reactions.`,
         posts: chunk3,
         forumUrl: mavsNews.url,
@@ -152,7 +156,6 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
   // ── TRADE & FA: Split into trade vs free agency topics ──
   const tradeFa = threads.find(t => t.title.includes('Trade & FA'))
   if (tradeFa && tradeFa.posts.length >= 10) {
-    // Posts about Kyrie
     const kyriePosts = tradeFa.posts.filter(p =>
       p.message.toLowerCase().includes('kyrie') || p.message.toLowerCase().includes('irving')
     )
@@ -168,6 +171,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
       plans.push({
         id: 'kyrie-future-debate',
         headline: '',
+        format: 'point-counterpoint',
         prompt: `Write an article about the MavsBoard community debate over Kyrie Irving's future with the Dallas Mavericks. Kyrie tore his ACL and the fanbase is divided on whether to trade him for draft picks or keep him as a veteran leader for Cooper Flagg's development. Cover both sides of the debate.`,
         posts: kyriePosts,
         forumUrl: tradeFa.url,
@@ -178,6 +182,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
       plans.push({
         id: 'offseason-cap-space',
         headline: '',
+        format: 'listicle',
         prompt: `Write an article about how MavsBoard fans are analyzing the Dallas Mavericks' salary cap situation and free agency plans for the 2026 offseason. The Mavs are ~$38M below the luxury tax. Cover what moves fans are proposing.`,
         posts: capPosts,
         forumUrl: tradeFa.url,
@@ -188,6 +193,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
       plans.push({
         id: 'trade-rumors-roundup',
         headline: '',
+        format: 'listicle',
         prompt: `Write an article summarizing the latest trade rumors and proposals being discussed on MavsBoard. What trades are fans proposing? What assets do they want to move or acquire?`,
         posts: generalTrade,
         forumUrl: tradeFa.url,
@@ -202,6 +208,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
     plans.push({
       id: 'around-the-nba',
       headline: '',
+      format: 'roundup',
       prompt: `Write an article about what's happening around the NBA from a Mavs fan perspective. These are MavsBoard community members discussing league-wide news, other teams' moves, and how it all affects Dallas. Cover the most interesting discussions and hot takes.`,
       posts: aroundNba.posts,
       forumUrl: aroundNba.url,
@@ -215,6 +222,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
     plans.push({
       id: 'next-gm-watch',
       headline: '',
+      format: 'listicle',
       prompt: `Write an article about the MavsBoard community's discussion of who should be the next Dallas Mavericks GM/President of Basketball Operations. Cover the candidates fans are proposing, what qualities they want, and the debate over the front office direction.`,
       posts: gmWatch.posts,
       forumUrl: gmWatch.url,
@@ -228,6 +236,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
     plans.push({
       id: 'tank-watch',
       headline: '',
+      format: 'faq',
       prompt: `Write an article about the MavsBoard tank watch discussion. The Mavs are 24-52 and positioning for the 2026 NBA Draft lottery. Cover the debate between fans who embrace the tank and those who want to see competitive basketball, draft lottery odds, and which prospects fans are eyeing.`,
       posts: tankWatch.posts,
       forumUrl: tankWatch.url,
@@ -240,7 +249,6 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
     t.type === 'normal' && t.title.toLowerCase().includes('game') && t.posts.length >= 5
   )
   if (gameThreads.length >= 2) {
-    // Batch into groups of 2-3 games
     for (let i = 0; i < gameThreads.length; i += 3) {
       const batch = gameThreads.slice(i, i + 3)
       const allPosts = batch.flatMap(t =>
@@ -254,6 +262,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
       plans.push({
         id: `game-recaps-${i}`,
         headline: '',
+        format: 'narrative',
         prompt: `Write a game recap roundup article covering these Dallas Mavericks games from MavsBoard fan reactions: ${gameNames.join(', ')}. The Mavs are in a rebuild year so focus on player development, Cooper Flagg's play, and what fans noticed. Cover the highs, lows, and best fan takes from each game.`,
         posts: allPosts,
         forumUrl: batch[0].url,
@@ -268,6 +277,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
     plans.push({
       id: 'three-point-dunk-rule',
       headline: '',
+      format: 'hot-takes',
       prompt: `Write a fun, lighthearted article about MavsBoard's debate over a hypothetical "3-Point Dunk" NBA rule. This is a fun thread where fans are debating a creative rule change. Keep it entertaining and highlight the funniest/most creative takes.`,
       posts: funThread.posts,
       forumUrl: funThread.url,
@@ -283,6 +293,7 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
   plans.push({
     id: 'weekly-digest',
     headline: '',
+    format: 'roundup',
     prompt: `Write a "MavsBoard Weekly Roundup" covering the hottest discussions from the Dallas Mavericks fan forum this week. Topics include: ${threads.map(t => t.title).join(', ')}. Hit the highlights from each, quote the most interesting community members, and keep it conversational.`,
     posts: allTopPosts,
     forumUrl: 'https://www.mavsboard.com',
@@ -309,7 +320,22 @@ async function generateArticle(groq: Groq, plan: ArticlePlan): Promise<void> {
     .map(([name, url]) => `${name}: ${url}`)
     .join('\n')
 
+  // Format-specific instructions
+  const formatInstructions: Record<string, string> = {
+    'listicle': `FORMAT: Write this as a LISTICLE with numbered items (## 1. Title, ## 2. Title, etc). Each item should be a specific move, player, or proposal that fans are discussing. Include a brief intro paragraph, then the numbered list with blockquotes and commentary for each item. This format is scannable and fun to read.`,
+    'narrative': `FORMAT: Write this as a NARRATIVE story with a beginning, middle, and end. Build tension, use scene-setting, and make it feel like you're telling a story about what happened. Use blockquotes as dramatic moments within the narrative.`,
+    'roundup': `FORMAT: Write this as a ROUNDUP with clear section headers (## Topic Name) for each major topic. Each section should be 2-3 paragraphs with at least one blockquote. Think of it like a highlight reel — hit the best moment from each topic and move on.`,
+    'hot-takes': `FORMAT: Write this as a RANKED HOT TAKES list. Rank the best/wildest/funniest takes from the community, starting with honorable mentions and building to the #1 hottest take. Use headers like "## Honorable Mention:", "## #3:", etc. Make it feel like a countdown.`,
+    'point-counterpoint': `FORMAT: Write this as a POINT/COUNTERPOINT debate. Structure it with a "## The Case For" section and a "## The Case Against" section, each with supporting quotes from community members. End with a "## The Verdict" section where you weigh in with your own take.`,
+    'faq': `FORMAT: Write this as an FAQ with questions as headers (## Q: Question here?) followed by answers that weave in community quotes and your own commentary. Questions should be things a fan would actually ask, like "What are our lottery odds?" or "Should we tank the last game?" Make it conversational, not dry.`,
+    'auto': '',
+  }
+
+  const formatGuide = formatInstructions[plan.format] || ''
+
   const prompt = `You write for MavsBoard Blog. You're a Mavs fan yourself — you have opinions, you're funny, and you write like you're texting your basketball-obsessed friend group, not writing a term paper.
+
+${formatGuide}
 
 CONTEXT: ${plan.prompt}
 

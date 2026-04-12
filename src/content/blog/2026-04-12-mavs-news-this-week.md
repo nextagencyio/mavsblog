@@ -1,65 +1,49 @@
 ---
-title: "Mavs Madness: Flagg's Historic Rookie Season and Future Plans"
-description: "Cooper Flagg's incredible rookie season has Mavs fans buzzing about the team's rebuild and 2026 NBA Draft prospects."
-pubDate: "2026-04-12T01:17:04.149Z"
+title: "Mavs Madness: Flagg's Historic Rookie Season and Offseason Buzz"
+description: "Dallas Mavericks news roundup: Cooper Flagg's impressive rookie year, Max Kleber's shooting streak, and fan reactions to the team's rebuild and potential offseason moves."
+pubDate: "2026-04-12T01:27:08.030Z"
 forumUrl: "https://www.mavsboard.com/showthread.php?tid=2172"
 tags: ["news", "featured"]
 heroImage: "../../assets/thumbnails/2026-04-12-mavs-news-this-week.jpg"
 ---
 
-The Mavs' rebuild year isn't looking so bad after all, thanks to [Cooper Flagg](https://twitter.com/search?q=Cooper+Flagg)'s historic rookie season. The kid's got game, and fans are excited about the team's future prospects. As [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) noted, "Our kid is pretty special. He was awesome. Almost everything he got, he created. It will be fun if they can add to good creators to the floor next year with him."
+## Cooper Flagg's Rookie Sensation
 
-> "I hope he is an asset and the near-future plans are to trade his ass." - [cow](https://www.mavsboard.com/member.php?action=profile&uid=92)
+The Mavs' rebuild is all about Cooper Flagg, and he's delivering. The rookie sensation is having a historic season, and fans are loving every minute of it. As [HoosierDaddyKid](https://www.mavsboard.com/member.php?action=profile&uid=159) points out, "J Kidd believes CF is the ROY." 
 
-We're not sure about that, [cow](https://www.mavsboard.com/member.php?action=profile&uid=92), but Flagg's shooting percentages are looking promising. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) pointed out that Max averages 7 threes attempts per game, and if he does that for the next two games, he needs to make at least 6 out of 14 to finish the year over 40% from three. 
+> "I think defense is so hard for rookies. Especially one who comes in near the end of the year playing with a group of mismatch parts. Cooper should be an elite defender in time, but you have seen him struggle with just how good these NBA players are." - [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404)
 
-> "If he does that the next two games, he needs to make at least 6 out of 14 to finish the year over 40% from three. He is currently exactly at 40% for the season." - [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404)
+## Max Kleber's Shooting Streak
 
-As for the team's future plans, [Christian Clark](https://www.mavsboard.com) provided 5 names to watch out for as the Mavs' next GM in his latest athletic article. Some of the top contenders include Bob Myers, Tim Connelly, and Masai Ujiri. 
+Max Kleber is on fire from beyond the arc, and fans are excited to see if he can keep it up. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) notes that "If he does that the next two games, he needs to make at least 6 out of 14 to finish the year over 40% from three." 
 
-> "Bob Myers- some skepticism  if he would leave CA and his current role with Harris Blitzer sports. Clark says it would be a home run hire. Has worked with Weltz." - [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404)
+> "I agree, he should a better defender. He has some Josh Green Disease. He looks the part and tries hard but so far he has had little real impact." - [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404)
 
-[Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504) had a tongue-in-cheek comment about Flagg's playing time: "Only one reason to play Flagg in the last game. Trying to break Wilt's record. Cause Flagg plays that's an automatic win against the Bulls." 
+## Offseason Buzz
 
-While we're not counting on Flagg breaking any records just yet, his improvement on defense is crucial for the team's growth. As [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) noted, "I think defense is so hard for rookies. Especially one who comes in near the end of the year playing with a group of mismatch parts. Cooper should be an elite defender in time, but you have seen him struggle with just how good these NBA players are."
+The Mavs' offseason plans are already generating buzz, with potential targets like Tim Connelly and Masai Ujiri. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) shares that "Christian Clark provides 5 names to watch out for as the Mavs next GM in his latest athletic article." 
 
-The Mavs' rebuild is also about positioning for the 2026 NBA Draft lottery. [HoosierDaddyKid](https://www.mavsboard.com/member.php?action=profile&uid=159) shared some interesting info: "Detroit has Minnesota's 26 protected FRP swap in the Jaden Ivey trade." 
+> "The guy who made the awful Gobert trade??? Geez, I hope not." - [Unknown](https://www.mavsboard.com/member.php?action=profile&uid=0)
 
-> "J Kidd believes CF is the ROY." - [HoosierDaddyKid](https://www.mavsboard.com/member.php?action=profile&uid=159)
+## What's Next for the Mavs?
 
-We're not surprised that Jason Kidd believes Cooper Flagg is the ROY; the kid's been on fire all season. 
-
-In terms of other Mavs news, [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23) reported that Tim Connelly could be a primary target for the Mavs, depending on how Minnesota does in the playoffs. 
-
-> "The guy who made the awful Gobert trade??? Geez, I hope not." - an anonymous user
-
-We agree, that trade was a head-scratcher. 
-
-As the season winds down, Mavs fans are eager to see what the future holds. One thing's for sure: with Cooper Flagg leading the charge, the team's rebuild is looking up. 
+As the Mavs look to the future, fans are eager to see what moves the team will make. [Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504) jokingly suggests that "Only one reason to play Flagg in the last game. Trying to break Wilt's record. Cause Flagg plays that's an automatic win against the Bulls." 
 
 > "All out next game please." - [FireNicoHarrison](https://www.mavsboard.com/member.php?action=profile&uid=4633)
 
-We feel you, [FireNicoHarrison](https://www.mavsboard.com/member.php?action=profile&uid=4633). Let's go Mavs! 
+The Mavs' rebuild is in full swing, and fans are excited to see what the future holds. Will Cooper Flagg lead the team to a playoff run? Can Max Kleber keep his shooting streak going? One thing's for sure: the Mavs are on the rise, and it's going to be a wild ride. 
 
-The offseason is just around the corner, and with it, a slew of new possibilities for the Mavs. Stay tuned, folks. It's gonna be a wild ride. 
+## A Look Ahead to the 2026 NBA Draft Lottery 
 
-By the way, don't @ us if we start calling [Max](https://www.mavsboard.com) 'Poulakidas' from now on . Thanks for keeping it real, [myconsumerclub](https://www.mavsboard.com/member.php?action=profile&uid=1016). 
+The Mavs are positioning themselves for the 2026 NBA Draft lottery, and fans are eager to see what the team will do. With a 24-52 record, the Mavs are in a prime position to land a top pick. As [michaeltex](https://www.mavsboard.com/member.php?action=profile&uid=23) notes, "MIN has a FRP this summer that is involved in some kind of complicated pick swap scheme." 
 
-And finally, if you're wondering what Cisse is, you're not alone. [Chicagojk](https://www.mavsboard.com/member.php?action=profile&uid=404) had this to say: "I am not sure what Cisse is, but he is something." 
+The Mavs' front office is busy making moves to secure a strong future for the team. Fans are excited to see what the team will do next. 
 
-We're not sure what to make of that, but we're excited to find out more about the Mavs' young core. 
+## Poulakidas and Dariq Whitehead 
 
-That's all for now, folks. Keep it locked to MavsBoard for the latest news and updates. 
+Fans are also buzzing about Poulakidas and Dariq Whitehead. [cow](https://www.mavsboard.com/member.php?action=profile&uid=92) simply states, "Love me some Poulakidas." 
 
-And if you're [Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504), you might be thinking: "Most smart people had those thoughts about the extension of Porzingis, then Cuban gave him five fully guaranteed years with a player option. LOL." 
-
-Yeah, that was a wild ride. 
-
-One thing we do know is that [Dariq Whitehead](https://www.mavsboard.com) is still just 21 years old, and offering him a 2-way contract wouldn't be a bad idea, according to [Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504). 
-
-Here's to hoping the Mavs make some smart moves in the offseason. 
-
-Until next time, Mavs fans. Keep it real.
+> "I can´t believe Dariq Whitehead is still just 21years old. Offer him at least a 2-way contract and we are a step closer to the All-Duke Team." - [Mavs2021](https://www.mavsboard.com/member.php?action=profile&uid=504)
 
 ---
 
