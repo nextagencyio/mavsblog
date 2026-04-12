@@ -1,0 +1,45 @@
+name: Weekly Reddit Roundup
+
+on:
+  schedule:
+    # Run every Monday at 9am CT (2pm UTC)
+    - cron: '0 14 * * 1'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Reddit roundup
+        run: npx tsx scripts/reddit-roundup.ts
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Generate thumbnail
+        run: npx tsx scripts/generate-thumbnails.ts
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
+
+      - name: Commit and push
+        run: |
+          git config user.name "MavsBoard Bot"
+          git config user.email "bot@mavsboard.com"
+          git add -A
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Weekly Reddit roundup: $(date +%Y-%m-%d)"
+          git push
