@@ -15,9 +15,14 @@ const GROQ_MODEL = 'meta-llama/llama-4-scout-17b-16e-instruct'
 
 interface ScrapedPost {
   username: string
+  uid: number
+  pid: number
+  tid: number
   message: string
   dateString: string
   isTopPoster: boolean
+  profileUrl: string
+  postUrl: string
 }
 
 interface ScrapedThread {
@@ -42,18 +47,61 @@ function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-function buildPostsText(posts: ScrapedPost[], max: number = 20): string {
-  // Prioritize top posters
+function selectPosts(posts: ScrapedPost[], max: number = 20): ScrapedPost[] {
   const top = posts.filter(p => p.isTopPoster)
   const others = posts.filter(p => !p.isTopPoster)
-  const selected = [
+  return [
     ...top.slice(0, Math.ceil(max * 0.6)),
     ...others.slice(0, Math.floor(max * 0.4)),
   ].slice(0, max)
+}
 
+function buildPostsText(posts: ScrapedPost[], max: number = 20): string {
+  const selected = selectPosts(posts, max)
   return selected
     .map(p => `**${p.username}** (${p.dateString}):\n${p.message.substring(0, 600)}`)
     .join('\n\n---\n\n')
+}
+
+function buildContributorsSection(posts: ScrapedPost[]): string {
+  // Deduplicate users, preserve order of appearance
+  const seen = new Map<string, ScrapedPost>()
+  for (const p of posts) {
+    if (p.username !== 'Unknown' && !seen.has(p.username)) {
+      seen.set(p.username, p)
+    }
+  }
+
+  const contributors = [...seen.values()]
+  if (contributors.length === 0) return ''
+
+  const lines = ['## Community Contributors', '']
+  lines.push('Thanks to these MavsBoard members whose posts contributed to this article:', '')
+  for (const c of contributors) {
+    lines.push(`- [**${c.username}**](${c.profileUrl})`)
+  }
+  return lines.join('\n')
+}
+
+function buildSourcePostsSection(posts: ScrapedPost[]): string {
+  // Group by thread, link to specific posts
+  const byThread = new Map<number, ScrapedPost[]>()
+  for (const p of posts) {
+    const existing = byThread.get(p.tid) || []
+    existing.push(p)
+    byThread.set(p.tid, existing)
+  }
+
+  const lines = ['## Read the Full Discussions', '']
+  for (const [tid, threadPosts] of byThread) {
+    const threadUrl = `https://www.mavsboard.com/showthread.php?tid=${tid}`
+    // Show up to 5 direct post links per thread
+    const postLinks = threadPosts.slice(0, 5).map(p =>
+      `[${p.username}'s post](${p.postUrl})`
+    )
+    lines.push(`- [View thread](${threadUrl}) — ${postLinks.join(' | ')}`)
+  }
+  return lines.join('\n')
 }
 
 async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
@@ -245,7 +293,21 @@ async function planArticles(threads: ScrapedThread[]): Promise<ArticlePlan[]> {
 }
 
 async function generateArticle(groq: Groq, plan: ArticlePlan): Promise<void> {
-  const postsText = buildPostsText(plan.posts)
+  const selected = selectPosts(plan.posts)
+  const postsText = selected
+    .map(p => `**${p.username}** (uid:${p.uid}) (${p.dateString}):\n${p.message.substring(0, 600)}`)
+    .join('\n\n---\n\n')
+
+  // Build a username→profile URL map for the prompt
+  const userMap = new Map<string, string>()
+  for (const p of selected) {
+    if (p.username !== 'Unknown') {
+      userMap.set(p.username, p.profileUrl)
+    }
+  }
+  const userMapStr = [...userMap.entries()]
+    .map(([name, url]) => `${name}: ${url}`)
+    .join('\n')
 
   const prompt = `You are a sports blogger writing for MavsBoard Blog (blog.mavsboard.com), the official blog of a Dallas Mavericks fan community forum. The forum has passionate, knowledgeable fans who have been discussing Mavs basketball for years.
 
@@ -254,13 +316,16 @@ CONTEXT: ${plan.prompt}
 FORUM POSTS FROM THE COMMUNITY:
 ${postsText}
 
+USER PROFILE LINKS (use these when mentioning usernames):
+${userMapStr}
+
 Write a compelling blog article. Requirements:
 1. Create an engaging, SEO-friendly headline
 2. Write 500-900 words
-3. Quote or reference specific community members by username — they are the stars
+3. When you mention a community member, link their name to their MavsBoard profile using markdown links like [username](profile_url). They are the stars of the content.
 4. Add context a casual NBA fan would need
 5. Conversational, community-driven tone — not ESPN formal
-6. End with an invitation to join MavsBoard forum
+6. Do NOT include a "join the forum" ending — that will be added separately
 7. Focus on the most insightful takes, not just recapping
 
 Format your response EXACTLY as:
@@ -289,6 +354,9 @@ DESCRIPTION: [1 sentence, under 155 chars, for SEO]
   const today = new Date().toISOString().split('T')[0]
   const slug = plan.id
 
+  const contributors = buildContributorsSection(selected)
+  const sourcePosts = buildSourcePostsSection(selected)
+
   const fileContent = `---
 title: "${headline.replace(/"/g, '\\"')}"
 description: "${description.replace(/"/g, '\\"')}"
@@ -301,7 +369,11 @@ ${body}
 
 ---
 
-*This article is curated from community discussions on [MavsBoard Forum](${plan.forumUrl}). Join the conversation and share your take!*
+${contributors}
+
+${sourcePosts}
+
+*This article is curated from community discussions on [MavsBoard Forum](${plan.forumUrl}). [Join the community](https://www.mavsboard.com/member.php?action=register) and share your take!*
 `
 
   const filePath = path.join(CONTENT_DIR, `${today}-${slug}.md`)

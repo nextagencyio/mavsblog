@@ -39,9 +39,14 @@ const TOP_POSTERS = [
 
 interface ScrapedPost {
   username: string
+  uid: number
+  pid: number
+  tid: number
   message: string
   dateString: string
   isTopPoster: boolean
+  profileUrl: string
+  postUrl: string
 }
 
 interface ScrapedThread {
@@ -192,11 +197,17 @@ async function scrapeThreadPages(tid: number, title: string, maxPages: number = 
 
     // Parse posts from this page
     // Split on post divs: <div class="post " ... id="post_XXXXX">
-    const postBlocks = html.split(/class="post\s+" style="" id="post_\d+"/)
-    for (const block of postBlocks.slice(1)) {
-      // Extract username — inside <span class="largetext"><a ...><span style="color:...">USERNAME</span></a>
-      const usernameMatch = block.match(/class="largetext"><a[^>]*>(?:<span[^>]*>)?([^<]+)/)
-      const username = usernameMatch ? usernameMatch[1].trim() : 'Unknown'
+    const postSplitRegex = /class="post\s+" style="" id="post_(\d+)"/
+    const rawBlocks = html.split(postSplitRegex)
+    // rawBlocks alternates: [before, pid, block, pid, block, ...]
+    for (let bi = 1; bi < rawBlocks.length; bi += 2) {
+      const pid = parseInt(rawBlocks[bi])
+      const block = rawBlocks[bi + 1] || ''
+
+      // Extract username and UID — <a href="...uid=XXX"><span>USERNAME</span></a>
+      const userMatch = block.match(/class="largetext"><a[^>]*uid=(\d+)[^>]*>(?:<span[^>]*>)?([^<]+)/)
+      const uid = userMatch ? parseInt(userMatch[1]) : 0
+      const username = userMatch ? userMatch[2].trim() : 'Unknown'
 
       // Extract post body — <div class="post_body scaleimages" id="pid_XXXXX">...</div>
       const bodyMatch = block.match(/class="post_body[^"]*"[^>]*>([\s\S]*?)<\/div>\s*\n?\s*\n?\s*<div class="post_meta"/)
@@ -204,7 +215,7 @@ async function scrapeThreadPages(tid: number, title: string, maxPages: number = 
       const message = stripHTML(bodyMatch[1])
       if (message.length < 20) continue
 
-      // Extract date — <span class="post_date"><span title="MM-DD-YYYY">Today/Yesterday/date</span>, HH:MM
+      // Extract date — <span class="post_date"><span title="MM-DD-YYYY">
       const dateMatch = block.match(/class="post_date"><span title="([^"]*)"/)
       const dateString = dateMatch ? dateMatch[1].trim() : ''
 
@@ -213,9 +224,14 @@ async function scrapeThreadPages(tid: number, title: string, maxPages: number = 
 
       posts.push({
         username,
+        uid,
+        pid,
+        tid,
         message: message.substring(0, 2000),
         dateString,
         isTopPoster: TOP_POSTERS.includes(username),
+        profileUrl: `${FORUM_URL}/member.php?action=profile&uid=${uid}`,
+        postUrl: `${FORUM_URL}/showthread.php?tid=${tid}&pid=${pid}#pid${pid}`,
       })
     }
 
