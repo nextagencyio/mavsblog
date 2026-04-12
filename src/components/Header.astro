@@ -1,5 +1,5 @@
 ---
-import { SITE_TITLE, FORUM_URL } from '../consts';
+import { SITE_TITLE, SITE_TAGLINE, FORUM_URL } from '../consts';
 ---
 
 <header>
@@ -7,7 +7,10 @@ import { SITE_TITLE, FORUM_URL } from '../consts';
 		<div class="container header-flex">
 			<a href="/" class="brand">
 				<img src="/images/mavsboard-logo.png" alt="MavsBoard" class="logo" />
-				<span class="site-title">{SITE_TITLE}</span>
+				<div class="brand-text">
+					<span class="site-title">{SITE_TITLE}</span>
+					<span class="site-tagline">{SITE_TAGLINE}</span>
+				</div>
 			</a>
 			<nav class="header-nav">
 				<a href="/">Home</a>
@@ -48,11 +51,22 @@ import { SITE_TITLE, FORUM_URL } from '../consts';
 		height: 36px;
 		width: auto;
 	}
+	.brand-text {
+		display: flex;
+		flex-direction: column;
+		line-height: 1.2;
+	}
 	.site-title {
-		font-size: 1.2em;
+		font-size: 1.15em;
 		font-weight: 700;
 		color: #fff;
 		letter-spacing: 0.5px;
+	}
+	.site-tagline {
+		font-size: 0.7em;
+		color: rgba(159, 197, 232, 0.7);
+		font-weight: 400;
+		font-style: italic;
 	}
 	.header-nav {
 		display: flex;
@@ -82,7 +96,7 @@ import { SITE_TITLE, FORUM_URL } from '../consts';
 		background: var(--blue-light) !important;
 	}
 	@media (max-width: 768px) {
-		.site-title { display: none; }
+		.brand-text { display: none; }
 		.header-nav a {
 			padding: 0.4rem 0.6rem;
 			font-size: 0.85rem;

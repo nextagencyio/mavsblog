@@ -108,40 +108,31 @@ p { margin: 0 0 1em; }
 	color: var(--text);
 }
 .prose a {
-	color: var(--blue);
+	color: #4a7ba8;
 	text-decoration: none;
-	border-bottom: 2px solid rgba(0, 83, 188, 0.2);
-	transition: border-color 0.2s, color 0.2s;
+	border-bottom: none;
+	transition: color 0.2s;
 }
 .prose a:hover {
-	color: var(--accent-dark);
-	border-bottom-color: var(--accent-dark);
+	color: var(--blue);
 	text-decoration: none;
 }
 /* Blockquotes — styled as pull quotes */
 .prose blockquote {
 	position: relative;
 	border: none;
-	margin: 2em -1em;
-	padding: 1.75em 2em 1.75em 4em;
-	background: linear-gradient(135deg, #f0f6ff 0%, #e8f0fe 100%);
-	border-radius: 12px;
-	color: rgb(var(--gray-700));
-	font-style: italic;
-	font-size: 1.1em;
-	line-height: 1.7;
-	box-shadow: inset 5px 0 0 var(--blue), 0 2px 8px rgba(0,0,0,0.04);
+	margin: 2em 0;
+	padding: 1.5em 1.75em 1.5em 1.75em;
+	background: #f8fafc;
+	border-radius: 8px;
+	color: #334155;
+	font-style: normal;
+	font-size: 1em;
+	line-height: 1.75;
+	border-left: 4px solid var(--blue-light);
 }
 .prose blockquote::before {
-	content: '\201C';
-	position: absolute;
-	top: 12px;
-	left: 14px;
-	font-size: 3.5em;
-	line-height: 1;
-	color: var(--blue);
-	opacity: 0.3;
-	font-family: Georgia, serif;
+	display: none;
 }
 .prose blockquote p {
 	margin-bottom: 0.5em;
@@ -221,24 +212,20 @@ p { margin: 0 0 1em; }
 	display: inline-flex;
 	align-items: center;
 	gap: 0.4rem;
-	padding: 0.5rem 1rem;
-	background: linear-gradient(135deg, rgb(var(--gray-100)), #e8f0fe);
+	padding: 0.45rem 0.9rem;
+	background: rgb(var(--gray-100));
 	border-radius: 24px;
-	font-size: 0.85rem;
+	font-size: 0.84rem;
 	color: var(--navy);
 	text-decoration: none;
-	border: 1px solid rgb(var(--gray-200));
-	border-bottom: 1px solid rgb(var(--gray-200));
+	border: none;
 	font-weight: 600;
 	transition: all 0.2s;
 }
 .prose hr ~ ul li a:hover {
 	background: var(--navy);
 	color: white;
-	border-color: var(--navy);
 	text-decoration: none;
-	transform: translateY(-1px);
-	box-shadow: 0 2px 8px rgba(0,40,94,0.2);
 }
 
 /* Source posts section — styled card */
