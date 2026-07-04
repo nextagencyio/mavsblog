@@ -1,10 +1,11 @@
 name: Weekly Reddit Roundup
 
 on:
-  schedule:
-    # Run every Monday at 9am CT (2pm UTC)
-    - cron: '0 14 * * 1'
-  workflow_dispatch: # Allow manual trigger
+  # Disabled: blog is being retired and redirected to mavsboard.com.
+  # schedule:
+  #   # Run every Monday at 9am CT (2pm UTC)
+  #   - cron: '0 14 * * 1'
+  workflow_dispatch: # Manual trigger only (scheduled runs disabled)
 
 permissions:
   contents: write
